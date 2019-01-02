@@ -8,8 +8,8 @@
 class MyTestClientHandler: public ClientHandler{
     Solver *solver;
 public:
-    MyTestClientHandler(Solver *solver, CacheManager *cm): ClientHandler(cm) {
-        solver = solver;
+    MyTestClientHandler(Solver *solver1, CacheManager *cm): ClientHandler(cm) {
+        this->solver = solver1;
     }
     void handleClient(ostream &output, istream &input) override {
         string line;
