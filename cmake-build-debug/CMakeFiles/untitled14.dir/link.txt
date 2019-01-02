@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/untitled14.dir/main.cpp.o CMakeFiles/untitled14.dir/FileCacheManger.cpp.o CMakeFiles/untitled14.dir/MySerialServer.cpp.o CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.o CMakeFiles/untitled14.dir/boot.cpp.o CMakeFiles/untitled14.dir/OpenSocket.cpp.o  -o untitled14 

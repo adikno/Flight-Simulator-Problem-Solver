@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="untitled14"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/michal/CLionProjects/untitled14/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/michal/CLionProjects/untitled14/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/michal/CLionProjects/untitled14/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="untitled14">
+				<Option output="/home/michal/CLionProjects/untitled14/cmake-build-debug/untitled14" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/michal/CLionProjects/untitled14/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled14"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="untitled14/fast">
+				<Option output="/home/michal/CLionProjects/untitled14/cmake-build-debug/untitled14" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/michal/CLionProjects/untitled14/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled14/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/michal/CLionProjects/untitled14/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/michal/CLionProjects/untitled14/CacheManager.h">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/ClientHandler.h">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/FileCacheManger.cpp">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/FileCacheManger.h">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/MySerialServer.cpp">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/MySerialServer.h">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/MyTestClientHandler.cpp">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/OpenSocket.cpp">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/OpenSocket.h">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/Server.h">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/Solver.h">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/boot.cpp">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/boot.h">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/main.cpp">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
