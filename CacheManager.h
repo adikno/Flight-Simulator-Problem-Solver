@@ -9,7 +9,7 @@
 
 using namespace std;
 
-class CacheManager{
+class CacheManager {
 
 public:
     virtual bool isExist(string problem) = 0;

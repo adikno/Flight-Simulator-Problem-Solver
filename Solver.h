@@ -8,11 +8,11 @@
 #include <string>
 
 using namespace std;
-class Solver{
+
+template <class P, class S>
+class Solver {
 
 public:
-    string getSolution(string problem){
-
-    }
+    virtual string getSolution(string problem) = 0;
 };
 #endif //UNTITLED14_SOLVER_H

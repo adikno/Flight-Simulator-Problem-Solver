@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/michal/CLionProjects/untitled14/FileCacheManger.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/FileCacheManger.cpp.o"
-  "/home/michal/CLionProjects/untitled14/MySerialServer.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/MySerialServer.cpp.o"
-  "/home/michal/CLionProjects/untitled14/MyTestClientHandler.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.o"
-  "/home/michal/CLionProjects/untitled14/OpenSocket.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/OpenSocket.cpp.o"
-  "/home/michal/CLionProjects/untitled14/boot.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/boot.cpp.o"
-  "/home/michal/CLionProjects/untitled14/main.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/main.cpp.o"
+  "/home/adi/CLionProjects/milestone2/FileCacheManger.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/FileCacheManger.cpp.o"
+  "/home/adi/CLionProjects/milestone2/Main.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/Main.cpp.o"
+  "/home/adi/CLionProjects/milestone2/MySerialServer.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/MySerialServer.cpp.o"
+  "/home/adi/CLionProjects/milestone2/MyTestClientHandler.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.o"
+  "/home/adi/CLionProjects/milestone2/OpenSocket.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/OpenSocket.cpp.o"
+  "/home/adi/CLionProjects/milestone2/StringReverser.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/StringReverser.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

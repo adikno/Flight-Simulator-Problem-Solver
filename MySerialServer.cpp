@@ -14,7 +14,6 @@
 
 using namespace std;
 
-
 struct membuf :std::streambuf{
     membuf(char* begin, char* end){
         this->setg(begin,begin,end);
@@ -61,21 +60,12 @@ void MySerialServer::openSocket(int port, ClientHandler *c) {
     listen(sockfd, 1);
     clilen = sizeof(cli_addr);
     while (run) {
-        bool success = false;
-        clock_t time_end;
-        time_end = clock() + timeout * CLOCKS_PER_SEC / 1000;
-        while (clock() < time_end ) {
-            if (clock() < time_end && (newsockfd = accept(sockfd, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen) >= 0)) {
-                success = true;
-                break;
-            }
-        }
-        if (!success)
 
-            if (newsockfd < 0) {
-                perror("ERROR on accept");
-                exit(1);
-            }
+        newsockfd = accept(sockfd, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
+        if (newsockfd < 0) {
+            perror("ERROR on accept");
+            exit(1);
+        }
 
         while (tempInput != "end") {
             bzero(input, 1024);

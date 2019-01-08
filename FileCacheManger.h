@@ -14,7 +14,7 @@
 using  namespace std;
 class FileCacheManager : public CacheManager{
     fstream cacheFile;
-    map<string,string> solutions;
+    map<string, string> solutions;
 
 public:
     FileCacheManager() {
