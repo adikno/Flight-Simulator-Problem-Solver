@@ -135,35 +135,9 @@ CMakeFiles/untitled14.dir/StringReverser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/StringReverser.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/milestone2/StringReverser.cpp -o CMakeFiles/untitled14.dir/StringReverser.cpp.s
 
-CMakeFiles/untitled14.dir/BestFirstSearch.cpp.o: CMakeFiles/untitled14.dir/flags.make
-CMakeFiles/untitled14.dir/BestFirstSearch.cpp.o: ../BestFirstSearch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/untitled14.dir/BestFirstSearch.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/BestFirstSearch.cpp.o -c /home/adi/CLionProjects/milestone2/BestFirstSearch.cpp
-
-CMakeFiles/untitled14.dir/BestFirstSearch.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled14.dir/BestFirstSearch.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/CLionProjects/milestone2/BestFirstSearch.cpp > CMakeFiles/untitled14.dir/BestFirstSearch.cpp.i
-
-CMakeFiles/untitled14.dir/BestFirstSearch.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/BestFirstSearch.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/milestone2/BestFirstSearch.cpp -o CMakeFiles/untitled14.dir/BestFirstSearch.cpp.s
-
-CMakeFiles/untitled14.dir/BFS.cpp.o: CMakeFiles/untitled14.dir/flags.make
-CMakeFiles/untitled14.dir/BFS.cpp.o: ../BFS.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/untitled14.dir/BFS.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/BFS.cpp.o -c /home/adi/CLionProjects/milestone2/BFS.cpp
-
-CMakeFiles/untitled14.dir/BFS.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled14.dir/BFS.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/CLionProjects/milestone2/BFS.cpp > CMakeFiles/untitled14.dir/BFS.cpp.i
-
-CMakeFiles/untitled14.dir/BFS.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/BFS.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/milestone2/BFS.cpp -o CMakeFiles/untitled14.dir/BFS.cpp.s
-
 CMakeFiles/untitled14.dir/Matrix.cpp.o: CMakeFiles/untitled14.dir/flags.make
 CMakeFiles/untitled14.dir/Matrix.cpp.o: ../Matrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/untitled14.dir/Matrix.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/untitled14.dir/Matrix.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/Matrix.cpp.o -c /home/adi/CLionProjects/milestone2/Matrix.cpp
 
 CMakeFiles/untitled14.dir/Matrix.cpp.i: cmake_force
@@ -176,7 +150,7 @@ CMakeFiles/untitled14.dir/Matrix.cpp.s: cmake_force
 
 CMakeFiles/untitled14.dir/Point.cpp.o: CMakeFiles/untitled14.dir/flags.make
 CMakeFiles/untitled14.dir/Point.cpp.o: ../Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/untitled14.dir/Point.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/untitled14.dir/Point.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/Point.cpp.o -c /home/adi/CLionProjects/milestone2/Point.cpp
 
 CMakeFiles/untitled14.dir/Point.cpp.i: cmake_force
@@ -189,7 +163,7 @@ CMakeFiles/untitled14.dir/Point.cpp.s: cmake_force
 
 CMakeFiles/untitled14.dir/SearcherSolver.cpp.o: CMakeFiles/untitled14.dir/flags.make
 CMakeFiles/untitled14.dir/SearcherSolver.cpp.o: ../SearcherSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/untitled14.dir/SearcherSolver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/untitled14.dir/SearcherSolver.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/SearcherSolver.cpp.o -c /home/adi/CLionProjects/milestone2/SearcherSolver.cpp
 
 CMakeFiles/untitled14.dir/SearcherSolver.cpp.i: cmake_force
@@ -208,8 +182,6 @@ untitled14_OBJECTS = \
 "CMakeFiles/untitled14.dir/main.cpp.o" \
 "CMakeFiles/untitled14.dir/OpenSocket.cpp.o" \
 "CMakeFiles/untitled14.dir/StringReverser.cpp.o" \
-"CMakeFiles/untitled14.dir/BestFirstSearch.cpp.o" \
-"CMakeFiles/untitled14.dir/BFS.cpp.o" \
 "CMakeFiles/untitled14.dir/Matrix.cpp.o" \
 "CMakeFiles/untitled14.dir/Point.cpp.o" \
 "CMakeFiles/untitled14.dir/SearcherSolver.cpp.o"
@@ -223,14 +195,12 @@ untitled14: CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.o
 untitled14: CMakeFiles/untitled14.dir/main.cpp.o
 untitled14: CMakeFiles/untitled14.dir/OpenSocket.cpp.o
 untitled14: CMakeFiles/untitled14.dir/StringReverser.cpp.o
-untitled14: CMakeFiles/untitled14.dir/BestFirstSearch.cpp.o
-untitled14: CMakeFiles/untitled14.dir/BFS.cpp.o
 untitled14: CMakeFiles/untitled14.dir/Matrix.cpp.o
 untitled14: CMakeFiles/untitled14.dir/Point.cpp.o
 untitled14: CMakeFiles/untitled14.dir/SearcherSolver.cpp.o
 untitled14: CMakeFiles/untitled14.dir/build.make
 untitled14: CMakeFiles/untitled14.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable untitled14"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable untitled14"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled14.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

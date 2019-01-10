@@ -4,8 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/adi/CLionProjects/milestone2/BFS.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/BFS.cpp.o"
-  "/home/adi/CLionProjects/milestone2/BestFirstSearch.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/BestFirstSearch.cpp.o"
   "/home/adi/CLionProjects/milestone2/FileCacheManger.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/FileCacheManger.cpp.o"
   "/home/adi/CLionProjects/milestone2/Matrix.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/Matrix.cpp.o"
   "/home/adi/CLionProjects/milestone2/MySerialServer.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/MySerialServer.cpp.o"

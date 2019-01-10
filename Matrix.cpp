@@ -16,7 +16,7 @@ void Matrix::setValues(vector<vector<double> > vec) {
     int i = 0, j = 0;
     for (vector<double> line: vec) {
         for (double num: line) {
-            auto *p = new Point(i, j, num);
+            auto *p = new Point(i, j);
             matrix[i][j] = new State<Point>(num, p);
             j++;
         }

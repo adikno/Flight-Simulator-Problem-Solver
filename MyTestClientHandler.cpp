@@ -6,9 +6,9 @@
 
 
 class MyTestClientHandler: public ClientHandler{
-    Solver<class P, class S> *solver;
+    Solver *solver;
 public:
-    MyTestClientHandler(Solver<class P, class S> *solver1, CacheManager *cm): ClientHandler(cm) {
+    MyTestClientHandler(Solver *solver1, CacheManager *cm): ClientHandler(cm) {
         this->solver = solver1;
     }
     void handleClient(ostream &output, istream &input) override {

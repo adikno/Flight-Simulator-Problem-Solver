@@ -8,7 +8,7 @@
 
 #include "Solver.h"
 
-class StringReverser: public Solver<class P, class S>{
+class StringReverser: public Solver{
     string getSolution(string problem) override;
 };
 

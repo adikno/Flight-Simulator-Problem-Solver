@@ -6,12 +6,10 @@ class Point{
 private:
     int x;
     int y;
-    int value;
 public:
-    Point(int x , int y, int value){
+    Point(int x , int y) {
         this->x = x;
         this->y = y;
-        this->value = value;
     }
     void setX(int x){
         this->x =x;
@@ -24,8 +22,5 @@ public:
     }
     int getY(){
         return this->y;
-    }
-    int setValue(int n) {
-        this->value = n;
     }
 };

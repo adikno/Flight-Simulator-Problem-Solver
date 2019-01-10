@@ -84,13 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/adi/CLionProjects/milestone2/BFS.cpp">
-			<Option target="untitled14"/>
-		</Unit>
 		<Unit filename="/home/adi/CLionProjects/milestone2/BFS.h">
-			<Option target="untitled14"/>
-		</Unit>
-		<Unit filename="/home/adi/CLionProjects/milestone2/BestFirstSearch.cpp">
 			<Option target="untitled14"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/milestone2/BestFirstSearch.h">

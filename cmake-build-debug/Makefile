@@ -123,60 +123,6 @@ untitled14/fast:
 	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/build
 .PHONY : untitled14/fast
 
-BFS.o: BFS.cpp.o
-
-.PHONY : BFS.o
-
-# target to build an object file
-BFS.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/BFS.cpp.o
-.PHONY : BFS.cpp.o
-
-BFS.i: BFS.cpp.i
-
-.PHONY : BFS.i
-
-# target to preprocess a source file
-BFS.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/BFS.cpp.i
-.PHONY : BFS.cpp.i
-
-BFS.s: BFS.cpp.s
-
-.PHONY : BFS.s
-
-# target to generate assembly for a file
-BFS.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/BFS.cpp.s
-.PHONY : BFS.cpp.s
-
-BestFirstSearch.o: BestFirstSearch.cpp.o
-
-.PHONY : BestFirstSearch.o
-
-# target to build an object file
-BestFirstSearch.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/BestFirstSearch.cpp.o
-.PHONY : BestFirstSearch.cpp.o
-
-BestFirstSearch.i: BestFirstSearch.cpp.i
-
-.PHONY : BestFirstSearch.i
-
-# target to preprocess a source file
-BestFirstSearch.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/BestFirstSearch.cpp.i
-.PHONY : BestFirstSearch.cpp.i
-
-BestFirstSearch.s: BestFirstSearch.cpp.s
-
-.PHONY : BestFirstSearch.s
-
-# target to generate assembly for a file
-BestFirstSearch.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/BestFirstSearch.cpp.s
-.PHONY : BestFirstSearch.cpp.s
-
 FileCacheManger.o: FileCacheManger.cpp.o
 
 .PHONY : FileCacheManger.o
@@ -429,12 +375,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... untitled14"
 	@echo "... edit_cache"
-	@echo "... BFS.o"
-	@echo "... BFS.i"
-	@echo "... BFS.s"
-	@echo "... BestFirstSearch.o"
-	@echo "... BestFirstSearch.i"
-	@echo "... BestFirstSearch.s"
 	@echo "... FileCacheManger.o"
 	@echo "... FileCacheManger.i"
 	@echo "... FileCacheManger.s"

@@ -10,13 +10,13 @@
 #include "Matrix.h"
 #include "Searchable.h"
 
-template <class P, class S>
-class SearcherSolver: public Solver<P,S>{
+class SearcherSolver : public Solver {
     Searcher<Point> *searcher;
 public:
-    SearcherSolver(Searcher<Point> *searcher1){
+    SearcherSolver(Searcher<Point> *searcher1) {
         this->searcher = searcher1;
     }
+
     string getSolution(string problem) {
         //ignore first line !!
         vector<vector<double> > vec = explode(problem, ',');
@@ -24,14 +24,14 @@ public:
         auto *matrix = new Matrix(first.at(0), first.at(0));
         vec.erase(vec.begin());
         matrix->setValues(vec);
-        Searchable<Point>* searchable = matrix;
-        vector<State<Point>*> solution = searcher->search(searchable);
-        string final ="";
+        Searchable<Point> *searchable = matrix;
+        vector<State<Point> *> solution = searcher->search(searchable);
+        string final = "";
         for (int i = 0; i < solution.size() - 1; i++) {
             int x1 = solution.at(i)->getState()->getX();
             int y1 = solution.at(i)->getState()->getY();
-            int x2 = solution.at(i+1)->getState()->getX();
-            int y2 = solution.at(i+1)->getState()->getY();
+            int x2 = solution.at(i + 1)->getState()->getX();
+            int y2 = solution.at(i + 1)->getState()->getY();
             if (y1 < y2) {
                 final += "Right, ";
                 continue;
@@ -53,8 +53,7 @@ public:
         return final;
     }
 
-    vector<vector<double>> explode(string &s, const char &c)
-    {
+    vector<vector<double>> explode(string &s, const char &c) {
         vector<vector<double >> big;
         string buff{""};
         vector<double> small;
@@ -92,11 +91,11 @@ public:
                 small.push_back(num);
                 buff = "";
             }
-                double num;
-                num = stod(buff);
-                small.push_back(num);
-                buff = "";
-            }
+            double num;
+            num = stod(buff);
+            small.push_back(num);
+            buff = "";
+        }
         return big;
     }
 };

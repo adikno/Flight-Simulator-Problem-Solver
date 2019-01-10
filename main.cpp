@@ -16,19 +16,17 @@
 
 
 int main(int argc , char** args){
-    /*Solver<class P, class S> *solver = new StringReverser();
+    Searcher<Point> *searcher = new BestFirstSearch<Point>();
+    auto *solver = new SearcherSolver(searcher);
     CacheManager *cacheManager = new FileCacheManager();
     ClientHandler *clientHandler = new MyTestClientHandler(solver, cacheManager);
     server_side::Server *server = new server_side::MySerialServer(30);
-    server->open(args[0], clientHandler);*/
-    Searcher<Point> *searcher = new BestFirstSearch<Point>();
-    auto *solver = new SearcherSolver<string, string>(searcher);
+    server->open(12345, clientHandler);
+
+/*
     string path = solver->getSolution("4\n1,0,2,11\n3,2,1,2\n0,2,0,1\n,5,2,1,1\n");
     cout << path << endl;
     cout << searcher->getPathCost() << endl;
     cout << searcher->getNumberOfNodesEvaluated() << endl;
-    //Matrix *matrix = new Matrix(2,2);
-    //matrix->
-
-
+*/
 }
