@@ -10,11 +10,12 @@
 using namespace std;
 template <class T>
 class Searchable{
+protected:
     State<T>* current;
 public:
     virtual State<T>* getInitialState() = 0;
     virtual State<T>* getGoalState() = 0;
-    virtual list<State<T>*> getAllPossibleStates(State<T>* s) =0;
+    virtual list<State<T>*> getAllPossibleStates(State<T>* s, char type) =0;
     virtual State<T>* getCurrent() {
         return current;
     }
@@ -24,5 +25,6 @@ public:
     virtual bool getCurrVisited() {
         return current->getVisited();
     }
+    virtual void setCurr(State<T>* curr) = 0;
 };
 #endif //UNTITLED14_SEARCHABLE_H

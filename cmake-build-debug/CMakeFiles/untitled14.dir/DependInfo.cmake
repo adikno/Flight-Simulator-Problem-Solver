@@ -4,17 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/michal/CLionProjects/untitled14/BFS.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/BFS.cpp.o"
-  "/home/michal/CLionProjects/untitled14/BestFirstSearch.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/BestFirstSearch.cpp.o"
-  "/home/michal/CLionProjects/untitled14/DFS.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/DFS.cpp.o"
-  "/home/michal/CLionProjects/untitled14/FileCacheManger.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/FileCacheManger.cpp.o"
-  "/home/michal/CLionProjects/untitled14/Main.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/Main.cpp.o"
-  "/home/michal/CLionProjects/untitled14/Matrix.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/Matrix.cpp.o"
-  "/home/michal/CLionProjects/untitled14/MySerialServer.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/MySerialServer.cpp.o"
-  "/home/michal/CLionProjects/untitled14/MyTestClientHandler.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.o"
-  "/home/michal/CLionProjects/untitled14/OpenSocket.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/OpenSocket.cpp.o"
-  "/home/michal/CLionProjects/untitled14/Point.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/Point.cpp.o"
-  "/home/michal/CLionProjects/untitled14/StringReverser.cpp" "/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles/untitled14.dir/StringReverser.cpp.o"
+  "/home/adi/CLionProjects/milestone2/BFS.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/BFS.cpp.o"
+  "/home/adi/CLionProjects/milestone2/BestFirstSearch.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/BestFirstSearch.cpp.o"
+  "/home/adi/CLionProjects/milestone2/FileCacheManger.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/FileCacheManger.cpp.o"
+  "/home/adi/CLionProjects/milestone2/Matrix.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/Matrix.cpp.o"
+  "/home/adi/CLionProjects/milestone2/MySerialServer.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/MySerialServer.cpp.o"
+  "/home/adi/CLionProjects/milestone2/MyTestClientHandler.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.o"
+  "/home/adi/CLionProjects/milestone2/OpenSocket.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/OpenSocket.cpp.o"
+  "/home/adi/CLionProjects/milestone2/Point.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/Point.cpp.o"
+  "/home/adi/CLionProjects/milestone2/SearcherSolver.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/SearcherSolver.cpp.o"
+  "/home/adi/CLionProjects/milestone2/StringReverser.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/StringReverser.cpp.o"
+  "/home/adi/CLionProjects/milestone2/main.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

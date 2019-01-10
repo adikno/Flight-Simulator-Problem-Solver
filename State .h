@@ -17,10 +17,11 @@ class State{
     bool visited = false;
 public:
 
-    State(double cost){
+    State(double cost, T *state){
         this->cost =cost;
-        this->distance = 0;
+        this->distance = cost;
         this->parent = nullptr;
+        this->state = state;
     }
     T* getState(){
         return this->state;
@@ -48,6 +49,9 @@ public:
     }
     double getCost(){
         return this->cost;
+    }
+    void setDistance(int d) {
+        this->distance += d;
     }
 
 };

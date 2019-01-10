@@ -6,6 +6,8 @@
 #define UNTITLED14_MATRIX_H
 
 
+#include <string>
+#include <vector>
 #include "Searchable.h"
 #include "Point.cpp"
 
@@ -22,12 +24,15 @@ public:
         for(int i = 0; i < row; ++i)
             matrix[i] = new State<Point>*[col];
     }
+
+    void setValues(vector<vector<double >> vec);
     State<Point>* getInitialState() override;
 
     State<Point>* getGoalState() override;
 
-    list<State<Point>*> getAllPossibleStates(State<Point>* s) override;
+    list<State<Point>*> getAllPossibleStates(State<Point>* s, char type) override;
 
+    void setCurr(State<Point>* curr);
 };
 
 

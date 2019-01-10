@@ -12,9 +12,10 @@ template <class T>
         class Searcher{
 public:
 // the search method
-    virtual vector<State<T>> search (Searchable<T> searchable) = 0;
+    virtual vector<State<T>*> search (Searchable<T>* searchable) = 0;
 // get how many nodes were evaluated by the algorithm
     virtual int getNumberOfNodesEvaluated() = 0;
 
-};
+    virtual double getPathCost() = 0;
+        };
 #endif //UNTITLED14_SEARCHER_H

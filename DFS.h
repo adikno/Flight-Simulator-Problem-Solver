@@ -12,33 +12,56 @@ template <class T>
 class DFS : public Searcher<T> {
 private:
     int evaluated;
+    double pathCost;
 
 public:
     DFS(){
         evaluated =0;
     }
-    vector<State<T>*> search(Searchable<T> searchable) override {
-        searchable.setCurrVisited();
+    vector<State<T>*> search(Searchable<T>* searchable) override {
+        searchable->setCurrVisited();
         vector<State<T>*> trace;
-        this->helpSearch(searchable, searchable.getInitialState(), trace);
+        this->helpSearch(searchable, searchable->getInitialState(), trace);
         return trace;
     }
 
-    void helpSearch(Searchable<T> &searchable, State<T> &curr, vector<State<T>*> &trace) {
-        curr.setVisited();
-        trace.push_back(curr);
+    int helpSearch(Searchable<T>* searchable, State<T>* curr, vector<State<T>*> &trace) {
+        if(curr->equals(searchable->getGoalState())){
+            while (curr->getParent() != nullptr) {
+                trace.push_back(curr);
+                pathCost += curr->getCost();
+                curr = curr->getParent();
+            }
+            pathCost += curr->getCost();
+            trace.push_back(curr);
+            vector<State<T>*> back;
+            for (int i = trace.size() - 1; i >= 0 ; i--) {
+                back.push_back(trace.at(i));
+            }
+            trace = back;
+            return 1;
+        }
+        curr->setVisited();
         evaluated++;
-        list<State<T>> succerssors = searchable.getAllPossibleStates(curr);
-        for (State<T> state : succerssors) {
-            bool visited = state.getVisited();
+        searchable->setCurr(curr);
+        list<State<T>*> succerssors = searchable->getAllPossibleStates(curr,'d');
+        for (State<T>* state : succerssors) {
+            bool visited = state->getVisited();
             if (!visited) {
-                helpSearch(searchable, state, trace);
+                state->setParent(curr);
+                if (helpSearch(searchable, state, trace) == 1) {
+                    return 1;
+                }
             }
         }
     }
 
     int getNumberOfNodesEvaluated() override {
         return evaluated;
+    }
+
+    double getPathCost() {
+        return pathCost;
     }
 };
 

@@ -12,14 +12,14 @@
 #include "Solver.h"
 #include "MyTestClientHandler.cpp";
 
+/*
+//namespace boot {
 
-namespace boot {
-
-    class Main{
+    class main{
     public:
         virtual int main(int argc , char* args) = 0;
     };
-};
+//};
 
-
+*/
 #endif //UNTITLED14_BOOT_H
