@@ -1,0 +1,72 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/michal/CLionProjects/untitled14/BFS.cpp
+BFS.h
+/home/michal/CLionProjects/untitled14/BFS.h
+
+/home/michal/CLionProjects/untitled14/BFS.h
+vector
+-
+unordered_set
+-
+Searcher.h
+/home/michal/CLionProjects/untitled14/Searcher.h
+
+/home/michal/CLionProjects/untitled14/BestFirstSearch.cpp
+BestFirstSearch.h
+/home/michal/CLionProjects/untitled14/BestFirstSearch.h
+
+/home/michal/CLionProjects/untitled14/BestFirstSearch.h
+Searcher.h
+/home/michal/CLionProjects/untitled14/Searcher.h
+unordered_set
+-
+vector
+-
+queue
+-
+algorithm
+-
+
+/home/michal/CLionProjects/untitled14/DFS.cpp
+DFS.h
+/home/michal/CLionProjects/untitled14/DFS.h
+
+/home/michal/CLionProjects/untitled14/DFS.h
+Searcher.h
+/home/michal/CLionProjects/untitled14/Searcher.h
+
+/home/michal/CLionProjects/untitled14/Matrix.cpp
+Matrix.h
+/home/michal/CLionProjects/untitled14/Matrix.h
+
+/home/michal/CLionProjects/untitled14/Matrix.h
+Searchable.h
+/home/michal/CLionProjects/untitled14/Searchable.h
+Point.cpp
+/home/michal/CLionProjects/untitled14/Point.cpp
+
+/home/michal/CLionProjects/untitled14/Point.cpp
+
+/home/michal/CLionProjects/untitled14/Searchable.h
+State .h
+/home/michal/CLionProjects/untitled14/State .h
+list
+-
+
+/home/michal/CLionProjects/untitled14/Searcher.h
+vector
+-
+Searchable.h
+/home/michal/CLionProjects/untitled14/Searchable.h
+
+/home/michal/CLionProjects/untitled14/State .h
+list
+-
+

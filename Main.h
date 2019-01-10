@@ -17,7 +17,7 @@ namespace boot {
 
     class Main{
     public:
-        int main(int argc , char* args) = 0;
+        virtual int main(int argc , char* args) = 0;
     };
 };
 

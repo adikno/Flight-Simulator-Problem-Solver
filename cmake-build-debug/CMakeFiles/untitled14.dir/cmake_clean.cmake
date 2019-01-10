@@ -5,6 +5,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled14.dir/Main.cpp.o"
   "CMakeFiles/untitled14.dir/OpenSocket.cpp.o"
   "CMakeFiles/untitled14.dir/StringReverser.cpp.o"
+  "CMakeFiles/untitled14.dir/BestFirstSearch.cpp.o"
+  "CMakeFiles/untitled14.dir/BFS.cpp.o"
+  "CMakeFiles/untitled14.dir/DFS.cpp.o"
+  "CMakeFiles/untitled14.dir/Matrix.cpp.o"
+  "CMakeFiles/untitled14.dir/Point.cpp.o"
   "untitled14.pdb"
   "untitled14"
 )

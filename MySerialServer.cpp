@@ -2,17 +2,12 @@
 // Created by michal on 12/28/18.
 //
 
+
 #include "MySerialServer.h"
-#include <vector>
-#include <sstream>
-#include <string.h>
-#include <stdlib.h>
-#include <thread>
-#include <netinet/in.h>
-#include <unistd.h>
-#include "OpenSocket.cpp"
+
 
 using namespace std;
+using namespace server_side;
 
 struct membuf :std::streambuf{
     membuf(char* begin, char* end){
@@ -21,7 +16,7 @@ struct membuf :std::streambuf{
 };
 void MySerialServer::open(int port, ClientHandler *c) {
    // auto *open = new OpenSocket();
-    thread t1(this, port, c);
+    //thread thread1(this ,port, c);
 }
 
 void MySerialServer::stop() {

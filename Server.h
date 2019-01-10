@@ -5,8 +5,17 @@
 #ifndef UNTITLED14_SERVER_H
 #define UNTITLED14_SERVER_H
 
-#include <bits/sigaction.h>
+#include <signal.h>
+#include <vector>
+#include <sstream>
+#include <string.h>
+#include <stdlib.h>
+#include <thread>
+#include <netinet/in.h>
+#include <unistd.h>
+#include "OpenSocket.cpp"
 #include "ClientHandler.h"
+
 
 namespace server_side {
     class Server {
