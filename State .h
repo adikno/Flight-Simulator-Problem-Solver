@@ -15,6 +15,7 @@ class State {
     double cost;
     double distance;
     bool visited = false;
+    double heur;
 public:
 
     State(double cost, T *state){
@@ -22,6 +23,7 @@ public:
         this->distance = cost;
         this->parent = nullptr;
         this->state = state;
+        this->heur = 0;
     }
     T* getState(){
         return this->state;
@@ -55,5 +57,12 @@ public:
         this->distance += d;
     }
 
+    double getHeur() {
+        return heur;
+    }
+
+    void setHeur(double heur) {
+        this->heur = heur;
+    }
 };
 #endif //UNTITLED14_STATE_H
