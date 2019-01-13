@@ -18,7 +18,7 @@ class FileCacheManager : public CacheManager{
 
 public:
     FileCacheManager() {
-        cacheFile.open("cache.txt");
+        cacheFile.open("cache.txt",fstream::in | fstream::out | fstream::app);
         string prob;
         string sol;
         while (getline(this->cacheFile, prob)) {

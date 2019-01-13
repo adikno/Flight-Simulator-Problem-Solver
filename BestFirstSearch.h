@@ -32,15 +32,6 @@ public:
         pathCost =0;
     }
 
-    priority_queue<State<T>*,vector<State<T>*>,Cmp> updateQueue(priority_queue<State<T>*, vector<State<T>*>, Cmp> &queueOpen) {
-        priority_queue<State<T>*,vector<State<T>*>,Cmp> temp;
-        while (!queueOpen.empty()) {
-            State<T>* node = queueOpen.top();
-            temp.push(node);
-            queueOpen.pop();
-        }
-        return temp;
-    }
     bool isExist( priority_queue<State<T> *, vector<State<T> *>, Cmp> open, State<T> *state) {
         while (!open.empty()) {
             if (state->equals(open.top())) {
@@ -50,20 +41,29 @@ public:
         }
         return false;
     }
+    priority_queue<State<T>*,vector<State<T>*>,Cmp> updateQueue(priority_queue<State<T>*, vector<State<T>*>, Cmp> &queueOpen) {
+        priority_queue<State<T>*,vector<State<T>*>,Cmp> temp;
+        while (!queueOpen.empty()) {
+            State<T>* node = queueOpen.top();
+            temp.push(node);
+            queueOpen.pop();
+        }
+        return temp;
+    }
 
     vector<State<T>*> search(Searchable<T>* searchable) override {
         priority_queue<State<T>*, vector<State<T>*>, Cmp> openList;
         openList.push(searchable->getInitialState());
         unordered_set<State<T>*> closed;
         vector<State<T>*> path;
-        evaluated++;
         while (!openList.empty()) {
+            evaluated++;
             State<T>* n = openList.top();
             openList.pop();
             closed.insert(n);
-            if(n->getParent() != NULL){
+            /*if(n->getParent() != NULL){
                 n->setDistance(n->getParent()->getDistance());
-            }
+            }*/
 
             if (n->equals(searchable->getGoalState())) {
                 path.push_back(n);
@@ -79,13 +79,18 @@ public:
                 }
                 return back;
             }
-            list<State<T>*> adjacent = searchable->getAllPossibleStates(n, 'b');
+            list<State<T> *> adjacent;
+            try {
+                adjacent = searchable->getAllPossibleStates(n, 'b');
+            } catch (exception &e) {
+                cout << "b";
+            }
             for (State<T>* adj : adjacent) { ;
                 bool exist = isExist(openList, adj);
                 if (!exist && closed.count(adj) != 1) {
                     adj->setParent(n);
+                    adj->setDistance(n->getDistance());
                     openList.push(adj);
-                    evaluated++;
                 } else if (adj->getDistance() > n->getDistance() + adj->getCost()) {
                     bool inOpen = isExist(openList, adj);
                     //if (!inOpen) {

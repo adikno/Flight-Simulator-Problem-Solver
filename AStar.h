@@ -10,10 +10,10 @@
 #include <vector>
 #include <queue>
 #include <algorithm>
-#include "Point.cpp"
+class Point;
 
 template <class T>
-class Astar :  public Searcher<Point> {
+class AStar :  public Searcher<Point> {
 private:
     int evaluated;
     double pathCost;
@@ -25,13 +25,13 @@ private:
     };
 
 public:
-    Astar() {
+    AStar() {
         evaluated = 0;
         pathCost = 0;
     }
     double calculateHValue(State<Point>* cur,Searchable<Point> *searchable)
     {
-        State<T>* goal = searchable->getGoalState();
+        State<Point>* goal = searchable->getGoalState();
         int xCur = cur->getState()->getX();
         int yCur = cur->getState()->getY();
         int xGoal = searchable->getGoalState()->getState()->getX();
@@ -52,9 +52,20 @@ public:
         }
         return false;
     }
+    priority_queue<State<T>*,vector<State<T>*>,Cmp> updateQueue(priority_queue<State<T>*, vector<State<T>*>, Cmp> &queueOpen) {
+        priority_queue<State<T>*,vector<State<T>*>,Cmp> temp;
+        while (!queueOpen.empty()) {
+            State<T>* node = queueOpen.top();
+            temp.push(node);
+            queueOpen.pop();
+        }
+        return temp;
+    }
+
     vector<State<T> *> search(Searchable<T> *searchable) override {
 
         priority_queue<State<T> *, vector<State<T> *>, Cmp> openList;
+        priority_queue<State<T> * ,vector<State<T> *> , Cmp> open;
         openList.push(searchable->getInitialState());
         unordered_set<State<T> *> closed;
         vector<State<T> *> path;
@@ -72,12 +83,13 @@ public:
 
             // Remove this vertex from the open list
             openList.pop();
-
+            evaluated++;
             // Add this vertex to the closed list
             n->setVisited();
             closed.insert(n);
 
             if (n->equals(searchable->getGoalState())) {
+                evaluated++;
                 path.push_back(n);
                 while (!n->equals(searchable->getInitialState())) {
                     path.push_back(n->getParent());
@@ -98,10 +110,10 @@ public:
                     adj->setParent(n);
                     adj->setHeur(this->calculateHValue(adj, searchable));
                     openList.push(adj);
+
                     adj->setDistance(n->getDistance() + adj->getCost());
 
                     //openList = updateQueue(openList);
-                    evaluated++;
 
                 } else if (adj->getDistance() > n->getDistance() + adj->getCost()) {
                     bool inOpen = isExist(openList, adj);
@@ -111,6 +123,7 @@ public:
                     //} else {
                     adj->setDistance(n->getDistance() + adj->getCost());
                     adj->setParent(n);
+                    adj->setHeur(this->calculateHValue(adj, searchable));
                     openList = updateQueue(openList);
                     //}
                 }

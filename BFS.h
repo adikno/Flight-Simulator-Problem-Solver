@@ -31,6 +31,7 @@ public:
             State<T>* n = openList.front();
             openList.pop_front();
             if(n->equals(searchable->getGoalState())){
+                evaluated++;
                 while (n->getParent() != nullptr) {
                     trace.push_back(n);
                     pathCost += n->getCost();

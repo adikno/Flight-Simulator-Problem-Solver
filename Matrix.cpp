@@ -46,7 +46,6 @@ list<State<Point>*> Matrix::getAllPossibleStates(State<Point>* s, char type) {
     if (x + 1 <= row - 1 && matrix[x+1][y]->getCost() >= 0) {
         down = matrix[x+1][y];
     }
-    if (type == 'b') {
         if (right != nullptr) {
             adj.push_back(right);
         }
@@ -59,7 +58,7 @@ list<State<Point>*> Matrix::getAllPossibleStates(State<Point>* s, char type) {
         if (up != nullptr) {
             adj.push_back(up);
         }
-    } else {
+    /*} else {
         if (down != nullptr) {
             adj.push_back(down);
         }
@@ -72,7 +71,7 @@ list<State<Point>*> Matrix::getAllPossibleStates(State<Point>* s, char type) {
         if (up != nullptr) {
             adj.push_back(up);
         }
-    }
+    }*/
 
     return adj;
 }

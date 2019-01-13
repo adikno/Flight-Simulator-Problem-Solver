@@ -11,9 +11,11 @@ CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.o: ../GeneralClientHandler.cp
 CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.o: ../GeneralClientHandler.h
 CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.o: ../Solver.h
 
-CMakeFiles/untitled14.dir/Main.cpp.o: ../BestFirstSearch.h
+CMakeFiles/untitled14.dir/Main.cpp.o: ../AStar.h
+CMakeFiles/untitled14.dir/Main.cpp.o: ../BFS.h
 CMakeFiles/untitled14.dir/Main.cpp.o: ../CacheManager.h
 CMakeFiles/untitled14.dir/Main.cpp.o: ../ClientHandler.h
+CMakeFiles/untitled14.dir/Main.cpp.o: ../DFS.h
 CMakeFiles/untitled14.dir/Main.cpp.o: ../FileCacheManger.h
 CMakeFiles/untitled14.dir/Main.cpp.o: ../GeneralClientHandler.cpp
 CMakeFiles/untitled14.dir/Main.cpp.o: ../GeneralClientHandler.h

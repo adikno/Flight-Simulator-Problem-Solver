@@ -7,7 +7,7 @@
 bool FileCacheManager:: isExist(string problem)  {
     string solution;
     try{
-        solutions.at(problem) = solution;
+        solutions.at(problem);
         return true;
     }catch (exception &e){
         return false;
