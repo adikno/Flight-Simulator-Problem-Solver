@@ -61,10 +61,6 @@ public:
             State<T>* n = openList.top();
             openList.pop();
             closed.insert(n);
-            if(n->getParent() != NULL){
-                n->setDistance(n->getParent()->getDistance());
-            }
-
             if (n->equals(searchable->getGoalState())) {
                 path.push_back(n);
                 while (!n->equals(searchable->getInitialState())) {
@@ -85,6 +81,8 @@ public:
                 if (!exist && closed.count(adj) != 1) {
                     adj->setParent(n);
                     openList.push(adj);
+                    adj->setDistance(n->getDistance() + adj->getCost());
+
                     evaluated++;
                 } else if (adj->getDistance() > n->getDistance() + adj->getCost()) {
                     bool inOpen = isExist(openList, adj);
