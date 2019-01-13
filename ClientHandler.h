@@ -19,7 +19,7 @@ public:
     ClientHandler(CacheManager *cacheManager){
         cm = cacheManager;
     }
-    virtual void handleClient (ostream &output, istream &input) =0;
+    virtual void handleClient (int clientSock) =0;
 };
 
 #endif //UNTITLED14_CLIENTHANDLER_H

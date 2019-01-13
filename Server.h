@@ -15,6 +15,7 @@
 #include <unistd.h>
 #include "OpenSocket.cpp"
 #include "ClientHandler.h"
+#include "MyParams.h"
 
 
 namespace server_side {
@@ -24,6 +25,8 @@ namespace server_side {
         virtual void open(int port, ClientHandler *c) = 0;
 
         virtual void stop() = 0;
+
     };
+
 }
 #endif //UNTITLED14_SERVER_H

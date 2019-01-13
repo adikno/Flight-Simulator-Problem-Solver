@@ -7,22 +7,21 @@
 
 #include <signal.h>
 #include "Server.h"
+#include <thread>
+
 namespace server_side {
 
-    class MySerialServer : public Server {
-        bool run = true;
-        int timeout;
+    class SerialServer : public Server {
+        struct myParams *params;
     public:
 
-        MySerialServer(int timeout) {
-            timeout = timeout;
+        SerialServer() {
+            this->params = new myParams();
         }
 
         void open(int port, ClientHandler *c) override;
 
         void stop() override;
-
-        void openSocket(int port, ClientHandler *c);
     };
 
 
