@@ -105,22 +105,40 @@
 		<Unit filename="/home/adi/CLionProjects/milestone2/FileCacheManger.h">
 			<Option target="untitled14"/>
 		</Unit>
+		<Unit filename="/home/adi/CLionProjects/milestone2/GeneralClientHandler.cpp">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/milestone2/GeneralClientHandler.h">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/milestone2/Main.cpp">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/milestone2/Main.h">
+			<Option target="untitled14"/>
+		</Unit>
 		<Unit filename="/home/adi/CLionProjects/milestone2/Matrix.cpp">
 			<Option target="untitled14"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/milestone2/Matrix.h">
 			<Option target="untitled14"/>
 		</Unit>
-		<Unit filename="/home/adi/CLionProjects/milestone2/MySerialServer.cpp">
+		<Unit filename="/home/adi/CLionProjects/milestone2/MatrixHandler.cpp">
 			<Option target="untitled14"/>
 		</Unit>
-		<Unit filename="/home/adi/CLionProjects/milestone2/MySerialServer.h">
+		<Unit filename="/home/adi/CLionProjects/milestone2/MatrixHandler.h">
 			<Option target="untitled14"/>
 		</Unit>
-		<Unit filename="/home/adi/CLionProjects/milestone2/MyTestClientHandler.cpp">
+		<Unit filename="/home/adi/CLionProjects/milestone2/MyParams.h">
 			<Option target="untitled14"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/milestone2/OpenSocket.cpp">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/milestone2/ParallelServer.cpp">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/milestone2/ParallelServer.h">
 			<Option target="untitled14"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/milestone2/Point.cpp">
@@ -132,10 +150,13 @@
 		<Unit filename="/home/adi/CLionProjects/milestone2/Searcher.h">
 			<Option target="untitled14"/>
 		</Unit>
-		<Unit filename="/home/adi/CLionProjects/milestone2/SearcherSolver.cpp">
+		<Unit filename="/home/adi/CLionProjects/milestone2/SearcherSolver.h">
 			<Option target="untitled14"/>
 		</Unit>
-		<Unit filename="/home/adi/CLionProjects/milestone2/SearcherSolver.h">
+		<Unit filename="/home/adi/CLionProjects/milestone2/SerialServer.cpp">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/milestone2/SerialServer.h">
 			<Option target="untitled14"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/milestone2/Server.h">
@@ -151,12 +172,6 @@
 			<Option target="untitled14"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/milestone2/StringReverser.h">
-			<Option target="untitled14"/>
-		</Unit>
-		<Unit filename="/home/adi/CLionProjects/milestone2/main.cpp">
-			<Option target="untitled14"/>
-		</Unit>
-		<Unit filename="/home/adi/CLionProjects/milestone2/main.h">
 			<Option target="untitled14"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/milestone2/CMakeLists.txt">

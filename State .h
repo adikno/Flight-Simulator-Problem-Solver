@@ -9,16 +9,16 @@
 
 using namespace std;
 template <class T>
-class State{
+class State {
     T* state;
     State<T>* parent;
     double cost;
-    int distance;
+    double distance;
     bool visited = false;
 public:
 
     State(double cost, T *state){
-        this->cost =cost;
+        this->cost = cost;
         this->distance = cost;
         this->parent = nullptr;
         this->state = state;
@@ -35,7 +35,8 @@ public:
     bool equals(State<T> *s){
         return this == s;
     }
-    int getDistance() {
+
+    double getDistance() {
         return distance;
     }
     void setVisited() {
@@ -50,7 +51,7 @@ public:
     double getCost(){
         return this->cost;
     }
-    void setDistance(int d) {
+    void setDistance(double d) {
         this->distance += d;
     }
 

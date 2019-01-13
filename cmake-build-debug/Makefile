@@ -150,6 +150,60 @@ FileCacheManger.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/FileCacheManger.cpp.s
 .PHONY : FileCacheManger.cpp.s
 
+GeneralClientHandler.o: GeneralClientHandler.cpp.o
+
+.PHONY : GeneralClientHandler.o
+
+# target to build an object file
+GeneralClientHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.o
+.PHONY : GeneralClientHandler.cpp.o
+
+GeneralClientHandler.i: GeneralClientHandler.cpp.i
+
+.PHONY : GeneralClientHandler.i
+
+# target to preprocess a source file
+GeneralClientHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.i
+.PHONY : GeneralClientHandler.cpp.i
+
+GeneralClientHandler.s: GeneralClientHandler.cpp.s
+
+.PHONY : GeneralClientHandler.s
+
+# target to generate assembly for a file
+GeneralClientHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.s
+.PHONY : GeneralClientHandler.cpp.s
+
+Main.o: Main.cpp.o
+
+.PHONY : Main.o
+
+# target to build an object file
+Main.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/Main.cpp.o
+.PHONY : Main.cpp.o
+
+Main.i: Main.cpp.i
+
+.PHONY : Main.i
+
+# target to preprocess a source file
+Main.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/Main.cpp.i
+.PHONY : Main.cpp.i
+
+Main.s: Main.cpp.s
+
+.PHONY : Main.s
+
+# target to generate assembly for a file
+Main.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/Main.cpp.s
+.PHONY : Main.cpp.s
+
 Matrix.o: Matrix.cpp.o
 
 .PHONY : Matrix.o
@@ -177,59 +231,32 @@ Matrix.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/Matrix.cpp.s
 .PHONY : Matrix.cpp.s
 
-MySerialServer.o: MySerialServer.cpp.o
+MatrixHandler.o: MatrixHandler.cpp.o
 
-.PHONY : MySerialServer.o
-
-# target to build an object file
-MySerialServer.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/MySerialServer.cpp.o
-.PHONY : MySerialServer.cpp.o
-
-MySerialServer.i: MySerialServer.cpp.i
-
-.PHONY : MySerialServer.i
-
-# target to preprocess a source file
-MySerialServer.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/MySerialServer.cpp.i
-.PHONY : MySerialServer.cpp.i
-
-MySerialServer.s: MySerialServer.cpp.s
-
-.PHONY : MySerialServer.s
-
-# target to generate assembly for a file
-MySerialServer.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/MySerialServer.cpp.s
-.PHONY : MySerialServer.cpp.s
-
-MyTestClientHandler.o: MyTestClientHandler.cpp.o
-
-.PHONY : MyTestClientHandler.o
+.PHONY : MatrixHandler.o
 
 # target to build an object file
-MyTestClientHandler.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.o
-.PHONY : MyTestClientHandler.cpp.o
+MatrixHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/MatrixHandler.cpp.o
+.PHONY : MatrixHandler.cpp.o
 
-MyTestClientHandler.i: MyTestClientHandler.cpp.i
+MatrixHandler.i: MatrixHandler.cpp.i
 
-.PHONY : MyTestClientHandler.i
+.PHONY : MatrixHandler.i
 
 # target to preprocess a source file
-MyTestClientHandler.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.i
-.PHONY : MyTestClientHandler.cpp.i
+MatrixHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/MatrixHandler.cpp.i
+.PHONY : MatrixHandler.cpp.i
 
-MyTestClientHandler.s: MyTestClientHandler.cpp.s
+MatrixHandler.s: MatrixHandler.cpp.s
 
-.PHONY : MyTestClientHandler.s
+.PHONY : MatrixHandler.s
 
 # target to generate assembly for a file
-MyTestClientHandler.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.s
-.PHONY : MyTestClientHandler.cpp.s
+MatrixHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/MatrixHandler.cpp.s
+.PHONY : MatrixHandler.cpp.s
 
 OpenSocket.o: OpenSocket.cpp.o
 
@@ -258,6 +285,33 @@ OpenSocket.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/OpenSocket.cpp.s
 .PHONY : OpenSocket.cpp.s
 
+ParallelServer.o: ParallelServer.cpp.o
+
+.PHONY : ParallelServer.o
+
+# target to build an object file
+ParallelServer.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/ParallelServer.cpp.o
+.PHONY : ParallelServer.cpp.o
+
+ParallelServer.i: ParallelServer.cpp.i
+
+.PHONY : ParallelServer.i
+
+# target to preprocess a source file
+ParallelServer.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/ParallelServer.cpp.i
+.PHONY : ParallelServer.cpp.i
+
+ParallelServer.s: ParallelServer.cpp.s
+
+.PHONY : ParallelServer.s
+
+# target to generate assembly for a file
+ParallelServer.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/ParallelServer.cpp.s
+.PHONY : ParallelServer.cpp.s
+
 Point.o: Point.cpp.o
 
 .PHONY : Point.o
@@ -285,32 +339,32 @@ Point.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/Point.cpp.s
 .PHONY : Point.cpp.s
 
-SearcherSolver.o: SearcherSolver.cpp.o
+SerialServer.o: SerialServer.cpp.o
 
-.PHONY : SearcherSolver.o
+.PHONY : SerialServer.o
 
 # target to build an object file
-SearcherSolver.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/SearcherSolver.cpp.o
-.PHONY : SearcherSolver.cpp.o
+SerialServer.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/SerialServer.cpp.o
+.PHONY : SerialServer.cpp.o
 
-SearcherSolver.i: SearcherSolver.cpp.i
+SerialServer.i: SerialServer.cpp.i
 
-.PHONY : SearcherSolver.i
+.PHONY : SerialServer.i
 
 # target to preprocess a source file
-SearcherSolver.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/SearcherSolver.cpp.i
-.PHONY : SearcherSolver.cpp.i
+SerialServer.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/SerialServer.cpp.i
+.PHONY : SerialServer.cpp.i
 
-SearcherSolver.s: SearcherSolver.cpp.s
+SerialServer.s: SerialServer.cpp.s
 
-.PHONY : SearcherSolver.s
+.PHONY : SerialServer.s
 
 # target to generate assembly for a file
-SearcherSolver.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/SearcherSolver.cpp.s
-.PHONY : SearcherSolver.cpp.s
+SerialServer.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/SerialServer.cpp.s
+.PHONY : SerialServer.cpp.s
 
 StringReverser.o: StringReverser.cpp.o
 
@@ -339,33 +393,6 @@ StringReverser.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/StringReverser.cpp.s
 .PHONY : StringReverser.cpp.s
 
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -378,30 +405,33 @@ help:
 	@echo "... FileCacheManger.o"
 	@echo "... FileCacheManger.i"
 	@echo "... FileCacheManger.s"
+	@echo "... GeneralClientHandler.o"
+	@echo "... GeneralClientHandler.i"
+	@echo "... GeneralClientHandler.s"
+	@echo "... Main.o"
+	@echo "... Main.i"
+	@echo "... Main.s"
 	@echo "... Matrix.o"
 	@echo "... Matrix.i"
 	@echo "... Matrix.s"
-	@echo "... MySerialServer.o"
-	@echo "... MySerialServer.i"
-	@echo "... MySerialServer.s"
-	@echo "... MyTestClientHandler.o"
-	@echo "... MyTestClientHandler.i"
-	@echo "... MyTestClientHandler.s"
+	@echo "... MatrixHandler.o"
+	@echo "... MatrixHandler.i"
+	@echo "... MatrixHandler.s"
 	@echo "... OpenSocket.o"
 	@echo "... OpenSocket.i"
 	@echo "... OpenSocket.s"
+	@echo "... ParallelServer.o"
+	@echo "... ParallelServer.i"
+	@echo "... ParallelServer.s"
 	@echo "... Point.o"
 	@echo "... Point.i"
 	@echo "... Point.s"
-	@echo "... SearcherSolver.o"
-	@echo "... SearcherSolver.i"
-	@echo "... SearcherSolver.s"
+	@echo "... SerialServer.o"
+	@echo "... SerialServer.i"
+	@echo "... SerialServer.s"
 	@echo "... StringReverser.o"
 	@echo "... StringReverser.i"
 	@echo "... StringReverser.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 

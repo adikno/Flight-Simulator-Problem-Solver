@@ -70,44 +70,44 @@ CMakeFiles/untitled14.dir/FileCacheManger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/FileCacheManger.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/milestone2/FileCacheManger.cpp -o CMakeFiles/untitled14.dir/FileCacheManger.cpp.s
 
-CMakeFiles/untitled14.dir/MySerialServer.cpp.o: CMakeFiles/untitled14.dir/flags.make
-CMakeFiles/untitled14.dir/MySerialServer.cpp.o: ../MySerialServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled14.dir/MySerialServer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/MySerialServer.cpp.o -c /home/adi/CLionProjects/milestone2/MySerialServer.cpp
+CMakeFiles/untitled14.dir/SerialServer.cpp.o: CMakeFiles/untitled14.dir/flags.make
+CMakeFiles/untitled14.dir/SerialServer.cpp.o: ../SerialServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled14.dir/SerialServer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/SerialServer.cpp.o -c /home/adi/CLionProjects/milestone2/SerialServer.cpp
 
-CMakeFiles/untitled14.dir/MySerialServer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled14.dir/MySerialServer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/CLionProjects/milestone2/MySerialServer.cpp > CMakeFiles/untitled14.dir/MySerialServer.cpp.i
+CMakeFiles/untitled14.dir/SerialServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled14.dir/SerialServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/CLionProjects/milestone2/SerialServer.cpp > CMakeFiles/untitled14.dir/SerialServer.cpp.i
 
-CMakeFiles/untitled14.dir/MySerialServer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/MySerialServer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/milestone2/MySerialServer.cpp -o CMakeFiles/untitled14.dir/MySerialServer.cpp.s
+CMakeFiles/untitled14.dir/SerialServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/SerialServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/milestone2/SerialServer.cpp -o CMakeFiles/untitled14.dir/SerialServer.cpp.s
 
-CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.o: CMakeFiles/untitled14.dir/flags.make
-CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.o: ../MyTestClientHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.o -c /home/adi/CLionProjects/milestone2/MyTestClientHandler.cpp
+CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.o: CMakeFiles/untitled14.dir/flags.make
+CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.o: ../GeneralClientHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.o -c /home/adi/CLionProjects/milestone2/GeneralClientHandler.cpp
 
-CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/CLionProjects/milestone2/MyTestClientHandler.cpp > CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.i
+CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/CLionProjects/milestone2/GeneralClientHandler.cpp > CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.i
 
-CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/milestone2/MyTestClientHandler.cpp -o CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.s
+CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/milestone2/GeneralClientHandler.cpp -o CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.s
 
-CMakeFiles/untitled14.dir/main.cpp.o: CMakeFiles/untitled14.dir/flags.make
-CMakeFiles/untitled14.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled14.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/main.cpp.o -c /home/adi/CLionProjects/milestone2/main.cpp
+CMakeFiles/untitled14.dir/Main.cpp.o: CMakeFiles/untitled14.dir/flags.make
+CMakeFiles/untitled14.dir/Main.cpp.o: ../Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled14.dir/Main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/Main.cpp.o -c /home/adi/CLionProjects/milestone2/Main.cpp
 
-CMakeFiles/untitled14.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled14.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/CLionProjects/milestone2/main.cpp > CMakeFiles/untitled14.dir/main.cpp.i
+CMakeFiles/untitled14.dir/Main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled14.dir/Main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/CLionProjects/milestone2/Main.cpp > CMakeFiles/untitled14.dir/Main.cpp.i
 
-CMakeFiles/untitled14.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/milestone2/main.cpp -o CMakeFiles/untitled14.dir/main.cpp.s
+CMakeFiles/untitled14.dir/Main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/Main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/milestone2/Main.cpp -o CMakeFiles/untitled14.dir/Main.cpp.s
 
 CMakeFiles/untitled14.dir/OpenSocket.cpp.o: CMakeFiles/untitled14.dir/flags.make
 CMakeFiles/untitled14.dir/OpenSocket.cpp.o: ../OpenSocket.cpp
@@ -161,46 +161,61 @@ CMakeFiles/untitled14.dir/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/Point.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/milestone2/Point.cpp -o CMakeFiles/untitled14.dir/Point.cpp.s
 
-CMakeFiles/untitled14.dir/SearcherSolver.cpp.o: CMakeFiles/untitled14.dir/flags.make
-CMakeFiles/untitled14.dir/SearcherSolver.cpp.o: ../SearcherSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/untitled14.dir/SearcherSolver.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/SearcherSolver.cpp.o -c /home/adi/CLionProjects/milestone2/SearcherSolver.cpp
+CMakeFiles/untitled14.dir/MatrixHandler.cpp.o: CMakeFiles/untitled14.dir/flags.make
+CMakeFiles/untitled14.dir/MatrixHandler.cpp.o: ../MatrixHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/untitled14.dir/MatrixHandler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/MatrixHandler.cpp.o -c /home/adi/CLionProjects/milestone2/MatrixHandler.cpp
 
-CMakeFiles/untitled14.dir/SearcherSolver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled14.dir/SearcherSolver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/CLionProjects/milestone2/SearcherSolver.cpp > CMakeFiles/untitled14.dir/SearcherSolver.cpp.i
+CMakeFiles/untitled14.dir/MatrixHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled14.dir/MatrixHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/CLionProjects/milestone2/MatrixHandler.cpp > CMakeFiles/untitled14.dir/MatrixHandler.cpp.i
 
-CMakeFiles/untitled14.dir/SearcherSolver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/SearcherSolver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/milestone2/SearcherSolver.cpp -o CMakeFiles/untitled14.dir/SearcherSolver.cpp.s
+CMakeFiles/untitled14.dir/MatrixHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/MatrixHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/milestone2/MatrixHandler.cpp -o CMakeFiles/untitled14.dir/MatrixHandler.cpp.s
+
+CMakeFiles/untitled14.dir/ParallelServer.cpp.o: CMakeFiles/untitled14.dir/flags.make
+CMakeFiles/untitled14.dir/ParallelServer.cpp.o: ../ParallelServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/untitled14.dir/ParallelServer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/ParallelServer.cpp.o -c /home/adi/CLionProjects/milestone2/ParallelServer.cpp
+
+CMakeFiles/untitled14.dir/ParallelServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled14.dir/ParallelServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/CLionProjects/milestone2/ParallelServer.cpp > CMakeFiles/untitled14.dir/ParallelServer.cpp.i
+
+CMakeFiles/untitled14.dir/ParallelServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/ParallelServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/milestone2/ParallelServer.cpp -o CMakeFiles/untitled14.dir/ParallelServer.cpp.s
 
 # Object files for target untitled14
 untitled14_OBJECTS = \
 "CMakeFiles/untitled14.dir/FileCacheManger.cpp.o" \
-"CMakeFiles/untitled14.dir/MySerialServer.cpp.o" \
-"CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.o" \
-"CMakeFiles/untitled14.dir/main.cpp.o" \
+"CMakeFiles/untitled14.dir/SerialServer.cpp.o" \
+"CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.o" \
+"CMakeFiles/untitled14.dir/Main.cpp.o" \
 "CMakeFiles/untitled14.dir/OpenSocket.cpp.o" \
 "CMakeFiles/untitled14.dir/StringReverser.cpp.o" \
 "CMakeFiles/untitled14.dir/Matrix.cpp.o" \
 "CMakeFiles/untitled14.dir/Point.cpp.o" \
-"CMakeFiles/untitled14.dir/SearcherSolver.cpp.o"
+"CMakeFiles/untitled14.dir/MatrixHandler.cpp.o" \
+"CMakeFiles/untitled14.dir/ParallelServer.cpp.o"
 
 # External object files for target untitled14
 untitled14_EXTERNAL_OBJECTS =
 
 untitled14: CMakeFiles/untitled14.dir/FileCacheManger.cpp.o
-untitled14: CMakeFiles/untitled14.dir/MySerialServer.cpp.o
-untitled14: CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.o
-untitled14: CMakeFiles/untitled14.dir/main.cpp.o
+untitled14: CMakeFiles/untitled14.dir/SerialServer.cpp.o
+untitled14: CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.o
+untitled14: CMakeFiles/untitled14.dir/Main.cpp.o
 untitled14: CMakeFiles/untitled14.dir/OpenSocket.cpp.o
 untitled14: CMakeFiles/untitled14.dir/StringReverser.cpp.o
 untitled14: CMakeFiles/untitled14.dir/Matrix.cpp.o
 untitled14: CMakeFiles/untitled14.dir/Point.cpp.o
-untitled14: CMakeFiles/untitled14.dir/SearcherSolver.cpp.o
+untitled14: CMakeFiles/untitled14.dir/MatrixHandler.cpp.o
+untitled14: CMakeFiles/untitled14.dir/ParallelServer.cpp.o
 untitled14: CMakeFiles/untitled14.dir/build.make
 untitled14: CMakeFiles/untitled14.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable untitled14"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable untitled14"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled14.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

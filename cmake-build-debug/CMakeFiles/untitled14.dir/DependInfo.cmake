@@ -5,14 +5,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/adi/CLionProjects/milestone2/FileCacheManger.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/FileCacheManger.cpp.o"
+  "/home/adi/CLionProjects/milestone2/GeneralClientHandler.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.o"
+  "/home/adi/CLionProjects/milestone2/Main.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/Main.cpp.o"
   "/home/adi/CLionProjects/milestone2/Matrix.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/Matrix.cpp.o"
-  "/home/adi/CLionProjects/milestone2/MySerialServer.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/MySerialServer.cpp.o"
-  "/home/adi/CLionProjects/milestone2/MyTestClientHandler.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.o"
+  "/home/adi/CLionProjects/milestone2/MatrixHandler.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/MatrixHandler.cpp.o"
   "/home/adi/CLionProjects/milestone2/OpenSocket.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/OpenSocket.cpp.o"
+  "/home/adi/CLionProjects/milestone2/ParallelServer.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/ParallelServer.cpp.o"
   "/home/adi/CLionProjects/milestone2/Point.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/Point.cpp.o"
-  "/home/adi/CLionProjects/milestone2/SearcherSolver.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/SearcherSolver.cpp.o"
+  "/home/adi/CLionProjects/milestone2/SerialServer.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/SerialServer.cpp.o"
   "/home/adi/CLionProjects/milestone2/StringReverser.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/StringReverser.cpp.o"
-  "/home/adi/CLionProjects/milestone2/main.cpp" "/home/adi/CLionProjects/milestone2/cmake-build-debug/CMakeFiles/untitled14.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
