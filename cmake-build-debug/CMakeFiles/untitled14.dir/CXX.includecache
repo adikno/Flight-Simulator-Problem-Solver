@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adi/CLionProjects/milestone2/BestFirstSearch.h
+/home/adi/CLionProjects/milestone2/AStar.h
 Searcher.h
 /home/adi/CLionProjects/milestone2/Searcher.h
 unordered_set
@@ -17,6 +17,16 @@ queue
 -
 algorithm
 -
+Point.cpp
+/home/adi/CLionProjects/milestone2/Point.cpp
+
+/home/adi/CLionProjects/milestone2/BFS.h
+vector
+-
+unordered_set
+-
+Searcher.h
+/home/adi/CLionProjects/milestone2/Searcher.h
 
 /home/adi/CLionProjects/milestone2/CacheManager.h
 string
@@ -27,6 +37,10 @@ iostream
 -
 CacheManager.h
 /home/adi/CLionProjects/milestone2/CacheManager.h
+
+/home/adi/CLionProjects/milestone2/DFS.h
+Searcher.h
+/home/adi/CLionProjects/milestone2/Searcher.h
 
 /home/adi/CLionProjects/milestone2/FileCacheManger.h
 fstream
@@ -67,8 +81,12 @@ GeneralClientHandler.cpp
 /home/adi/CLionProjects/milestone2/GeneralClientHandler.cpp
 SearcherSolver.h
 /home/adi/CLionProjects/milestone2/SearcherSolver.h
-BestFirstSearch.h
-/home/adi/CLionProjects/milestone2/BestFirstSearch.h
+BFS.h
+/home/adi/CLionProjects/milestone2/BFS.h
+DFS.h
+/home/adi/CLionProjects/milestone2/DFS.h
+AStar.h
+/home/adi/CLionProjects/milestone2/AStar.h
 MatrixHandler.h
 /home/adi/CLionProjects/milestone2/MatrixHandler.h
 

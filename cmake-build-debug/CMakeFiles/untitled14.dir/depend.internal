@@ -12,9 +12,11 @@ CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.o
  /home/adi/CLionProjects/milestone2/GeneralClientHandler.h
  /home/adi/CLionProjects/milestone2/Solver.h
 CMakeFiles/untitled14.dir/Main.cpp.o
- /home/adi/CLionProjects/milestone2/BestFirstSearch.h
+ /home/adi/CLionProjects/milestone2/AStar.h
+ /home/adi/CLionProjects/milestone2/BFS.h
  /home/adi/CLionProjects/milestone2/CacheManager.h
  /home/adi/CLionProjects/milestone2/ClientHandler.h
+ /home/adi/CLionProjects/milestone2/DFS.h
  /home/adi/CLionProjects/milestone2/FileCacheManger.h
  /home/adi/CLionProjects/milestone2/GeneralClientHandler.cpp
  /home/adi/CLionProjects/milestone2/GeneralClientHandler.h

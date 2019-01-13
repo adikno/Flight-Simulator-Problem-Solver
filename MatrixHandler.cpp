@@ -14,9 +14,9 @@ MatrixHandler::MatrixHandler(Solver *solver1, CacheManager *cacheManager) : Clie
 void MatrixHandler::handleClient(int clientSock) {
     string solution;
     long n;
-    char problem[256] = "";
-    char temp[256] = "";
-    //char output[256] = "";
+    char problem[1024] = "";
+    char temp[1024] = "";
+    char output[1024] = "";
 
     bzero(temp, 1024);
     n = read(clientSock, temp, 1023);
@@ -26,6 +26,7 @@ void MatrixHandler::handleClient(int clientSock) {
     }
     while (strcmp(temp, "end") != 0) {
         strcat(problem, temp);
+        strcat(problem, "\n");
         bzero(temp, 1024);
         n = read(clientSock, temp, 1023);
         if (n < 0) {
@@ -40,8 +41,8 @@ void MatrixHandler::handleClient(int clientSock) {
         cm->saveSolution(problem, solution);
     }
 
-    //strcpy(output, solution.data());
-    if(::send(clientSock, solution.data(), solution.size(),0) < 0){
+    strcpy(output, solution.data());
+    if(write(clientSock, output, 1023) < 0){
         perror("ERROR writing to socket");
         exit(1);
     }

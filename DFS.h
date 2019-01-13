@@ -27,6 +27,7 @@ public:
 
     int helpSearch(Searchable<T>* searchable, State<T>* curr, vector<State<T>*> &trace) {
         if(curr->equals(searchable->getGoalState())){
+            evaluated++;
             while (curr->getParent() != nullptr) {
                 trace.push_back(curr);
                 pathCost += curr->getCost();
@@ -44,7 +45,7 @@ public:
         curr->setVisited();
         evaluated++;
         searchable->setCurr(curr);
-        list<State<T>*> succerssors = searchable->getAllPossibleStates(curr,'d');
+        list<State<T>*> succerssors = searchable->getAllPossibleStates(curr,'b');
         for (State<T>* state : succerssors) {
             bool visited = state->getVisited();
             if (!visited) {

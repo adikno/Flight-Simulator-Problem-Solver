@@ -21,8 +21,9 @@ public:
         //ignore first line !!
         vector<vector<double> > vec = explode(problem, ',');
         vector<double> first = vec.at(0);
-        auto *matrix = new Matrix(first.at(0), first.at(0));
-        vec.erase(vec.begin());
+        auto *matrix = new Matrix(first.size(), first.size());
+        vec.erase(vec.end());
+        vec.erase(vec.end());
         matrix->setValues(vec);
         Searchable<Point> *searchable = matrix;
         vector<State<Point> *> solution = searcher->search(searchable);
@@ -65,14 +66,22 @@ public:
                 if (buff[0] == '-') {
                     buff.erase(0, 1);
                     double num;
-                    num = -1 * stod(buff);
+                     try {
+                         num = -1 * stod(buff);
+                     } catch (exception &e) {
+                         cout << "a";
+                     }
                     small.push_back(num);
                     big.push_back(small);
                     small.clear();
                     buff = "";
                 } else {
                     double num;
-                    num = stod(buff);
+                    try {
+                        num = stod(buff);
+                    } catch (exception &e) {
+                        cout << "a";
+                    }
                     small.push_back(num);
                     big.push_back(small);
                     small.clear();
@@ -87,12 +96,21 @@ public:
             if (buff[0] == '-') {
                 buff.erase(0, 1);
                 double num;
-                num = -1 * stod(buff);
+                try {
+                    num = -1 * stod(buff);
+                } catch (exception &e) {
+                    cout << "a";
+                }
                 small.push_back(num);
                 buff = "";
+                continue;
             }
             double num;
-            num = stod(buff);
+            try {
+                num = stod(buff);
+            } catch (exception &e) {
+                cout << "a";
+            }
             small.push_back(num);
             buff = "";
         }
