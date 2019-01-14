@@ -2,8 +2,8 @@
 // Created by michal on 12/28/18.
 //
 
-#ifndef UNTITLED14_MYSERIALSERVER_H
-#define UNTITLED14_MYSERIALSERVER_H
+#ifndef UNTITLED14_SERIALSERVER_H
+#define UNTITLED14_SERIALSERVER_H
 
 #include <signal.h>
 #include "Server.h"
@@ -26,4 +26,4 @@ namespace server_side {
 
 
 }
-#endif //UNTITLED14_MYSERIALSERVER_H
+#endif //UNTITLED14_SERIALSERVER_H

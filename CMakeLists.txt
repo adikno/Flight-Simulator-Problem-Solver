@@ -2,5 +2,39 @@ cmake_minimum_required(VERSION 3.12)
 project(untitled14)
 
 set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_FLAGS -pthread)
 
-add_executable(untitled14 FileCacheManger.cpp FileCacheManger.h CacheManager.h ClientHandler.h MySerialServer.cpp MySerialServer.h Server.h Solver.h MyTestClientHandler.cpp main.cpp main.h OpenSocket.cpp StringReverser.cpp StringReverser.h Searcher.h Searchable.h "State .h" BestFirstSearch.h BFS.h DFS.h Matrix.cpp Matrix.h Point.cpp SearcherSolver.h Astar.cpp Astar.h)
+include_directories(.)
+
+add_executable(untitled14
+        AStar.h
+        BestFirstSearch.h
+        BFS.h
+        CacheManager.h
+        ClientHandler.h
+        DFS.h
+        FileCacheManger.cpp
+        FileCacheManger.h
+        GeneralClientHandler.cpp
+        GeneralClientHandler.h
+        Main.cpp
+        Main.h
+        Matrix.cpp
+        Matrix.h
+        MatrixHandler.cpp
+        MatrixHandler.h
+        MyParams.h
+        OpenSocket.cpp
+        ParallelServer.cpp
+        ParallelServer.h
+        Point.cpp
+        Searchable.h
+        Searcher.h
+        SearcherSolver.h
+        SerialServer.cpp
+        SerialServer.h
+        Server.h
+        Solver.h
+        "State .h"
+        StringReverser.cpp
+        StringReverser.h)

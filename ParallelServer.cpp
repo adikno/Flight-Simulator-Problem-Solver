@@ -31,7 +31,7 @@ void* openParallelSocket(void* arg) {
     // Now start listening for the clients, here process will
     //  go in sleep mode and will wait for the incoming connection
 
-    listen(sockfd, 1);
+    listen(sockfd, SOMAXCONN);
     clilen = sizeof(cli_addr);
 
     bool first = true;

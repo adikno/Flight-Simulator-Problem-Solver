@@ -33,6 +33,17 @@ public:
     list<State<Point>*> getAllPossibleStates(State<Point>* s, char type) override;
 
     void setCurr(State<Point>* curr);
+    double calculateHValue(State<Point>* cur);
+
+    ~Matrix() {
+        for (int j = 0; j < row; j++) {
+            for (int i = 0; i < row; ++i) {
+                delete matrix[j][i];
+            }
+            delete matrix[j];
+        }
+        delete matrix;
+    }
 };
 
 

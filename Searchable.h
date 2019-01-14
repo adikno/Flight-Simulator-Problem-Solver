@@ -26,5 +26,6 @@ public:
         return current->getVisited();
     }
     virtual void setCurr(State<T>* curr) = 0;
+    virtual double calculateHValue(State<T>* cur) = 0;
 };
 #endif //UNTITLED14_SEARCHABLE_H

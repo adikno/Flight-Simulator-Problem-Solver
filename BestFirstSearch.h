@@ -83,7 +83,7 @@ public:
             try {
                 adjacent = searchable->getAllPossibleStates(n, 'b');
             } catch (exception &e) {
-                cout << "b";
+                //out << "b";
             }
             for (State<T>* adj : adjacent) { ;
                 bool exist = isExist(openList, adj);

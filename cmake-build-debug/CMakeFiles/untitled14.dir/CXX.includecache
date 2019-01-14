@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/adi/CLionProjects/milestone2/AStar.h
+/home/michal/CLionProjects/untitled14/AStar.h
 Searcher.h
-/home/adi/CLionProjects/milestone2/Searcher.h
+/home/michal/CLionProjects/untitled14/Searcher.h
 unordered_set
 -
 vector
@@ -17,42 +17,52 @@ queue
 -
 algorithm
 -
-Point.cpp
-/home/adi/CLionProjects/milestone2/Point.cpp
 
-/home/adi/CLionProjects/milestone2/BFS.h
+/home/michal/CLionProjects/untitled14/BFS.h
 vector
 -
 unordered_set
 -
 Searcher.h
-/home/adi/CLionProjects/milestone2/Searcher.h
+/home/michal/CLionProjects/untitled14/Searcher.h
 
-/home/adi/CLionProjects/milestone2/CacheManager.h
+/home/michal/CLionProjects/untitled14/BestFirstSearch.h
+Searcher.h
+/home/michal/CLionProjects/untitled14/Searcher.h
+unordered_set
+-
+vector
+-
+queue
+-
+algorithm
+-
+
+/home/michal/CLionProjects/untitled14/CacheManager.h
 string
 -
 
-/home/adi/CLionProjects/milestone2/ClientHandler.h
+/home/michal/CLionProjects/untitled14/ClientHandler.h
 iostream
 -
 CacheManager.h
-/home/adi/CLionProjects/milestone2/CacheManager.h
+/home/michal/CLionProjects/untitled14/CacheManager.h
 
-/home/adi/CLionProjects/milestone2/DFS.h
+/home/michal/CLionProjects/untitled14/DFS.h
 Searcher.h
-/home/adi/CLionProjects/milestone2/Searcher.h
+/home/michal/CLionProjects/untitled14/Searcher.h
 
-/home/adi/CLionProjects/milestone2/FileCacheManger.h
+/home/michal/CLionProjects/untitled14/FileCacheManger.h
 fstream
 -
 iostream
 -
 CacheManager.h
-/home/adi/CLionProjects/milestone2/CacheManager.h
+/home/michal/CLionProjects/untitled14/CacheManager.h
 map
 -
 
-/home/adi/CLionProjects/milestone2/GeneralClientHandler.cpp
+/home/michal/CLionProjects/untitled14/GeneralClientHandler.cpp
 sys/socket.h
 -
 memory.h
@@ -60,59 +70,65 @@ memory.h
 unistd.h
 -
 GeneralClientHandler.h
-/home/adi/CLionProjects/milestone2/GeneralClientHandler.h
+/home/michal/CLionProjects/untitled14/GeneralClientHandler.h
 
-/home/adi/CLionProjects/milestone2/GeneralClientHandler.h
+/home/michal/CLionProjects/untitled14/GeneralClientHandler.h
 ClientHandler.h
-/home/adi/CLionProjects/milestone2/ClientHandler.h
+/home/michal/CLionProjects/untitled14/ClientHandler.h
 Solver.h
-/home/adi/CLionProjects/milestone2/Solver.h
+/home/michal/CLionProjects/untitled14/Solver.h
 
-/home/adi/CLionProjects/milestone2/Main.cpp
+/home/michal/CLionProjects/untitled14/Main.cpp
 signal.h
 -
 Server.h
-/home/adi/CLionProjects/milestone2/Server.h
+/home/michal/CLionProjects/untitled14/Server.h
 SerialServer.h
-/home/adi/CLionProjects/milestone2/SerialServer.h
+/home/michal/CLionProjects/untitled14/SerialServer.h
 FileCacheManger.h
-/home/adi/CLionProjects/milestone2/FileCacheManger.h
+/home/michal/CLionProjects/untitled14/FileCacheManger.h
 GeneralClientHandler.cpp
-/home/adi/CLionProjects/milestone2/GeneralClientHandler.cpp
+/home/michal/CLionProjects/untitled14/GeneralClientHandler.cpp
 SearcherSolver.h
-/home/adi/CLionProjects/milestone2/SearcherSolver.h
+/home/michal/CLionProjects/untitled14/SearcherSolver.h
 BFS.h
-/home/adi/CLionProjects/milestone2/BFS.h
+/home/michal/CLionProjects/untitled14/BFS.h
 DFS.h
-/home/adi/CLionProjects/milestone2/DFS.h
+/home/michal/CLionProjects/untitled14/DFS.h
 AStar.h
-/home/adi/CLionProjects/milestone2/AStar.h
+/home/michal/CLionProjects/untitled14/AStar.h
 MatrixHandler.h
-/home/adi/CLionProjects/milestone2/MatrixHandler.h
+/home/michal/CLionProjects/untitled14/MatrixHandler.h
+BestFirstSearch.h
+/home/michal/CLionProjects/untitled14/BestFirstSearch.h
 
-/home/adi/CLionProjects/milestone2/Matrix.h
+/home/michal/CLionProjects/untitled14/Matrix.cpp
+Matrix.h
+/home/michal/CLionProjects/untitled14/Matrix.h
+
+/home/michal/CLionProjects/untitled14/Matrix.h
 string
 -
 vector
 -
 Searchable.h
-/home/adi/CLionProjects/milestone2/Searchable.h
+/home/michal/CLionProjects/untitled14/Searchable.h
 Point.cpp
-/home/adi/CLionProjects/milestone2/Point.cpp
+/home/michal/CLionProjects/untitled14/Point.cpp
 
-/home/adi/CLionProjects/milestone2/MatrixHandler.h
+/home/michal/CLionProjects/untitled14/MatrixHandler.h
 ClientHandler.h
-/home/adi/CLionProjects/milestone2/ClientHandler.h
+/home/michal/CLionProjects/untitled14/ClientHandler.h
 Solver.h
-/home/adi/CLionProjects/milestone2/Solver.h
+/home/michal/CLionProjects/untitled14/Solver.h
 
-/home/adi/CLionProjects/milestone2/MyParams.h
+/home/michal/CLionProjects/untitled14/MyParams.h
 ClientHandler.h
-/home/adi/CLionProjects/milestone2/ClientHandler.h
+/home/michal/CLionProjects/untitled14/ClientHandler.h
 
-/home/adi/CLionProjects/milestone2/OpenSocket.cpp
+/home/michal/CLionProjects/untitled14/OpenSocket.cpp
 ClientHandler.h
-/home/adi/CLionProjects/milestone2/ClientHandler.h
+/home/michal/CLionProjects/untitled14/ClientHandler.h
 vector
 -
 sstream
@@ -128,39 +144,39 @@ netinet/in.h
 unistd.h
 -
 
-/home/adi/CLionProjects/milestone2/Point.cpp
+/home/michal/CLionProjects/untitled14/Point.cpp
 
-/home/adi/CLionProjects/milestone2/Searchable.h
+/home/michal/CLionProjects/untitled14/Searchable.h
 State .h
-/home/adi/CLionProjects/milestone2/State .h
+/home/michal/CLionProjects/untitled14/State .h
 list
 -
 
-/home/adi/CLionProjects/milestone2/Searcher.h
+/home/michal/CLionProjects/untitled14/Searcher.h
 vector
 -
 Searchable.h
-/home/adi/CLionProjects/milestone2/Searchable.h
+/home/michal/CLionProjects/untitled14/Searchable.h
 
-/home/adi/CLionProjects/milestone2/SearcherSolver.h
+/home/michal/CLionProjects/untitled14/SearcherSolver.h
 Solver.h
-/home/adi/CLionProjects/milestone2/Solver.h
+/home/michal/CLionProjects/untitled14/Solver.h
 Searcher.h
-/home/adi/CLionProjects/milestone2/Searcher.h
+/home/michal/CLionProjects/untitled14/Searcher.h
 Matrix.h
-/home/adi/CLionProjects/milestone2/Matrix.h
+/home/michal/CLionProjects/untitled14/Matrix.h
 Searchable.h
-/home/adi/CLionProjects/milestone2/Searchable.h
+/home/michal/CLionProjects/untitled14/Searchable.h
 
-/home/adi/CLionProjects/milestone2/SerialServer.h
+/home/michal/CLionProjects/untitled14/SerialServer.h
 signal.h
 -
 Server.h
-/home/adi/CLionProjects/milestone2/Server.h
+/home/michal/CLionProjects/untitled14/Server.h
 thread
 -
 
-/home/adi/CLionProjects/milestone2/Server.h
+/home/michal/CLionProjects/untitled14/Server.h
 signal.h
 -
 vector
@@ -178,17 +194,17 @@ netinet/in.h
 unistd.h
 -
 OpenSocket.cpp
-/home/adi/CLionProjects/milestone2/OpenSocket.cpp
+/home/michal/CLionProjects/untitled14/OpenSocket.cpp
 ClientHandler.h
-/home/adi/CLionProjects/milestone2/ClientHandler.h
+/home/michal/CLionProjects/untitled14/ClientHandler.h
 MyParams.h
-/home/adi/CLionProjects/milestone2/MyParams.h
+/home/michal/CLionProjects/untitled14/MyParams.h
 
-/home/adi/CLionProjects/milestone2/Solver.h
+/home/michal/CLionProjects/untitled14/Solver.h
 string
 -
 
-/home/adi/CLionProjects/milestone2/State .h
+/home/michal/CLionProjects/untitled14/State .h
 list
 -
 

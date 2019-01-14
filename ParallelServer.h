@@ -7,6 +7,9 @@
 
 
 #include "Server.h"
+extern pthread_mutex_t mutex;
+extern pthread_mutex_t mutexFile;
+
 
 namespace server_side {
 
@@ -19,8 +22,11 @@ namespace server_side {
         void open(int port, ClientHandler *c) override;
 
         void stop() override;
+        ~ParallelServer(){
+            pthread_mutex_destroy(&mutex);
+            pthread_mutex_destroy(&mutexFile);
+        }
     };
-
 
 }
 

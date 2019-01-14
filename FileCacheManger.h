@@ -9,6 +9,7 @@
 #include <iostream>
 #include "CacheManager.h"
 #include <map>
+#include "ParallelServer.h"
 
 
 using  namespace std;

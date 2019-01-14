@@ -13,8 +13,14 @@
 #include "DFS.h"
 #include "AStar.h"
 #include "MatrixHandler.h"
+#include "BestFirstSearch.h"
+#include "ParallelServer.h"
 
+pthread_mutex_t mutex;
+pthread_mutex_t mutexFile;
 int main(int argc, char *argv[]) {
+    pthread_mutex_init(&mutex, nullptr);
+    pthread_mutex_init(&mutexFile, nullptr);
     Searcher<Point> *searcher = new AStar<Point>();
     Searcher<Point> *searcher2 = new BFS<Point>();
     Searcher<Point> *searcher3 = new DFS<Point>();
@@ -22,9 +28,9 @@ int main(int argc, char *argv[]) {
     auto *solver = new SearcherSolver(searcher);
     CacheManager *cacheManager = new FileCacheManager();
     ClientHandler *clientHandler = new MatrixHandler(solver, cacheManager);
-    /*server_side::Server *server = new server_side::SerialServer();
+    server_side::Server *server = new server_side::ParallelServer();
     server->open(atoi(argv[1]), clientHandler);
-    while(true);*/
+    //while(true);
     auto *solver2 = new SearcherSolver(searcher2);
     auto *solver3 = new SearcherSolver(searcher3);
     string path1 = solver->getSolution("4, 2, 9, 5, 7, 0, 7, 6, 3, 7, 8\n"

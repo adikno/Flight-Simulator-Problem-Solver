@@ -51,6 +51,7 @@ public:
             }
         }
         final.erase(final.length() - 2, 2);
+        delete matrix;
         return final;
     }
 

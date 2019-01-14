@@ -10,16 +10,17 @@
 #include <vector>
 #include <queue>
 #include <algorithm>
-class Point;
 
+//class T;
+using namespace std;
 template <class T>
-class AStar :  public Searcher<Point> {
+class AStar :  public Searcher<T> {
 private:
     int evaluated;
     double pathCost;
     class Cmp {
     public:
-        bool operator()(State<Point>* left, State<Point>* right) {
+        bool operator()(State<T>* left, State<T>* right) {
             return (left->getHeur()) > (right->getHeur());
         }
     };
@@ -29,20 +30,7 @@ public:
         evaluated = 0;
         pathCost = 0;
     }
-    double calculateHValue(State<Point>* cur,Searchable<Point> *searchable)
-    {
-        State<Point>* goal = searchable->getGoalState();
-        int xCur = cur->getState()->getX();
-        int yCur = cur->getState()->getY();
-        int xGoal = searchable->getGoalState()->getState()->getX();
-        int yGoal = searchable->getGoalState()->getState()->getY();
-        double disMan = abs (xCur - xGoal) +
-                        abs (yCur - yGoal);
-        double total = disMan + cur->getCost() + cur->getParent()->getDistance();
-        //cur->setHeur(total);
-        return total;
 
-    }
     bool isExist( priority_queue<State<T> *, vector<State<T> *>, Cmp> open, State<T> *state) {
         while (!open.empty()) {
             if (state->equals(open.top())) {
@@ -65,13 +53,13 @@ public:
     vector<State<T> *> search(Searchable<T> *searchable) override {
 
         priority_queue<State<T> *, vector<State<T> *>, Cmp> openList;
-        priority_queue<State<T> * ,vector<State<T> *> , Cmp> open;
+        //priority_queue<State<T> * ,vector<State<T> *> , Cmp> open;
         openList.push(searchable->getInitialState());
         unordered_set<State<T> *> closed;
         vector<State<T> *> path;
         // Put the starting cell on the open list and set its
         // 'f' as 0
-        openList.insert(searchable->getInitialState());
+        openList.push(searchable->getInitialState());
         evaluated++;
 
         // We set this boolean value as false as initially
@@ -98,7 +86,7 @@ public:
                 }
                 pathCost += n->getCost();
                 vector<State<T> *> back;
-                for (unsigned long i = path.size() - 1; i >= 0; i--) {
+                for (int i = path.size() - 1; i >= 0; i--) {
                     back.push_back(path.at(i));
                 }
                 return back;
@@ -108,7 +96,7 @@ public:
                 bool exist = isExist(openList, adj);
                 if (!exist && closed.count(adj) != 1) {
                     adj->setParent(n);
-                    adj->setHeur(this->calculateHValue(adj, searchable));
+                    adj->setHeur(searchable->calculateHValue(adj));
                     openList.push(adj);
 
                     adj->setDistance(n->getDistance() + adj->getCost());
@@ -123,7 +111,7 @@ public:
                     //} else {
                     adj->setDistance(n->getDistance() + adj->getCost());
                     adj->setParent(n);
-                    adj->setHeur(this->calculateHValue(adj, searchable));
+                    adj->setHeur(searchable->calculateHValue(adj));
                     openList = updateQueue(openList);
                     //}
                 }
@@ -135,12 +123,12 @@ public:
 
     int getNumberOfNodesEvaluated()
     override{
-        return 0;
+        return evaluated;
     }
 
     double getPathCost()
     override{
-        return 0;
+        return pathCost;
     }
 
 

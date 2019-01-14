@@ -79,3 +79,18 @@ list<State<Point>*> Matrix::getAllPossibleStates(State<Point>* s, char type) {
 void Matrix::setCurr(State<Point>* curr) {
     this->current = curr;
 }
+double Matrix::calculateHValue(State<Point>* cur)
+{
+    State<Point>* goal = this->getGoalState();
+    int xCur = cur->getState()->getX();
+    int yCur = cur->getState()->getY();
+    int xGoal = this->getGoalState()->getState()->getX();
+    int yGoal = this->getGoalState()->getState()->getY();
+    double disMan = abs (xCur - xGoal) +
+                    abs (yCur - yGoal);
+    double total = disMan + cur->getCost() + cur->getParent()->getDistance();
+    //cur->setHeur(total);
+    return total;
+
+}
+

@@ -64,5 +64,9 @@ public:
     void setHeur(double heur) {
         this->heur = heur;
     }
+
+    ~State() {
+        delete this->state;
+    }
 };
 #endif //UNTITLED14_STATE_H
