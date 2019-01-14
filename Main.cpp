@@ -18,9 +18,12 @@
 
 pthread_mutex_t mutexMap;
 pthread_mutex_t mutexFile;
+bool run;
+
 int main(int argc, char *argv[]) {
     pthread_mutex_init(&mutexMap, nullptr);
     pthread_mutex_init(&mutexFile, nullptr);
+    run = true;
     Searcher<Point> *searcher = new AStar<Point>();
     Searcher<Point> *searcher2 = new BFS<Point>();
     Searcher<Point> *searcher3 = new DFS<Point>();

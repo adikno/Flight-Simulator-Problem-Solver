@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "CacheManager.h"
+#include "Solver.h"
 
 using  namespace std;
 
@@ -23,6 +24,9 @@ public:
 
     virtual ~ClientHandler() = default;
 
+    virtual CacheManager* getCacheManager() = 0;
+
+    virtual Solver* getSolver() = 0;
 };
 
 #endif //UNTITLED14_CLIENTHANDLER_H

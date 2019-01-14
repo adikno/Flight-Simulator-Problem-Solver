@@ -47,6 +47,8 @@ iostream
 -
 CacheManager.h
 /home/adi/CLionProjects/milestone2/CacheManager.h
+Solver.h
+/home/adi/CLionProjects/milestone2/Solver.h
 
 /home/adi/CLionProjects/milestone2/DFS.h
 Searcher.h
@@ -120,6 +122,16 @@ Searchable.h
 Point.cpp
 /home/adi/CLionProjects/milestone2/Point.cpp
 
+/home/adi/CLionProjects/milestone2/MatrixHandler.cpp
+memory.h
+-
+unistd.h
+-
+sys/socket.h
+-
+MatrixHandler.h
+/home/adi/CLionProjects/milestone2/MatrixHandler.h
+
 /home/adi/CLionProjects/milestone2/MatrixHandler.h
 ClientHandler.h
 /home/adi/CLionProjects/milestone2/ClientHandler.h
@@ -159,6 +171,8 @@ unistd.h
 /home/adi/CLionProjects/milestone2/ParallelServer.cpp
 ParallelServer.h
 /home/adi/CLionProjects/milestone2/ParallelServer.h
+MatrixHandler.h
+/home/adi/CLionProjects/milestone2/MatrixHandler.h
 
 /home/adi/CLionProjects/milestone2/ParallelServer.h
 Server.h
@@ -239,6 +253,14 @@ string
 /home/adi/CLionProjects/milestone2/State .h
 list
 -
+
+/home/adi/CLionProjects/milestone2/StringReverser.cpp
+StringReverser.h
+/home/adi/CLionProjects/milestone2/StringReverser.h
+
+/home/adi/CLionProjects/milestone2/StringReverser.h
+Solver.h
+/home/adi/CLionProjects/milestone2/Solver.h
 
 /home/adi/CLionProjects/milestone2/Task.h
 

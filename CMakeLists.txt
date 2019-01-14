@@ -4,8 +4,6 @@ project(untitled14)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS -pthread)
 
-include_directories(.)
-
 add_executable(untitled14
         AStar.h
         BestFirstSearch.h

@@ -47,6 +47,8 @@ void MatrixHandler::handleClient(int clientSock) {
         exit(1);
     }
 
+    cout << solution << endl;
+
     close(clientSock);
     //output.flush();
 

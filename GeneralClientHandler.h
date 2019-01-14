@@ -18,8 +18,8 @@ public:
     void handleClient(int clientSock) override {
         string solution;
         long n;
-        char problem[256] = "";
-        //char output[256] = "";
+        char problem[1024] = "";
+        char output[1024] = "";
 
         bzero(problem, 1024);
         n = read(clientSock, problem, 1023);
@@ -35,8 +35,8 @@ public:
                 cm->saveSolution(problem, solution);
             }
 
-            //strcpy(output, solution.data());
-            if(::send(clientSock, solution.data(), solution.size(),0) < 0){
+            strcpy(output, solution.data());
+            if(::send(clientSock, output, 1023,0) < 0){
                 perror("ERROR writing to socket");
                 exit(1);
             }
@@ -54,6 +54,14 @@ public:
     ~GeneralClientHandler() override {
         delete this->cm;
         delete this->solver;
+    }
+
+    CacheManager* getCacheManager() override {
+        return this->cm;
+    }
+
+    Solver* getSolver() override {
+        return this->solver;
     }
 
 };
