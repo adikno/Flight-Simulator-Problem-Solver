@@ -37,4 +37,4 @@ add_executable(untitled14
         Solver.h
         "State .h"
         StringReverser.cpp
-        StringReverser.h MatrixGenerator.cpp MatrixGenerator.h GraphFile.cpp GraphFile.h SolutionFile.cpp SolutionFile.h)
+        StringReverser.h Task.h MatrixTask.h TasksQueue.cpp TasksQueue.h)

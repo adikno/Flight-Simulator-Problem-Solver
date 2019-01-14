@@ -29,15 +29,13 @@ public:
         cacheFile.close();
     }
 
-
-    ~FileCacheManager() = default;
-
     bool isExist(string problem) override;
 
     string getSulotion(string problem) override;
 
     void saveSolution(string problem,string solution) override;
 
+    ~FileCacheManager() override = default;
 
 };
 

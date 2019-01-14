@@ -9,9 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled14.dir/Point.cpp.o"
   "CMakeFiles/untitled14.dir/SerialServer.cpp.o"
   "CMakeFiles/untitled14.dir/StringReverser.cpp.o"
-  "CMakeFiles/untitled14.dir/MatrixGenerator.cpp.o"
-  "CMakeFiles/untitled14.dir/GraphFile.cpp.o"
-  "CMakeFiles/untitled14.dir/SolutionFile.cpp.o"
+  "CMakeFiles/untitled14.dir/TasksQueue.cpp.o"
   "untitled14.pdb"
   "untitled14"
 )

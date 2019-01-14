@@ -7,23 +7,29 @@
 
 
 #include "Server.h"
-extern pthread_mutex_t mutex;
-extern pthread_mutex_t mutexFile;
+#include "TasksQueue.h"
+#include "MatrixTask.h"
 
+extern pthread_mutex_t mutexMap;
+extern pthread_mutex_t mutexFile;
+extern bool run;
 
 namespace server_side {
 
     class ParallelServer : public Server {
-        vector<struct myParams*> params;
+        struct myParams *params;
+        queue<std::thread> workers;
+        TasksQueue tasks_queue;
     public:
 
-        ParallelServer() = default;
+        ParallelServer();
 
         void open(int port, ClientHandler *c) override;
 
         void stop() override;
+
         ~ParallelServer(){
-            pthread_mutex_destroy(&mutex);
+            pthread_mutex_destroy(&mutexMap);
             pthread_mutex_destroy(&mutexFile);
         }
     };

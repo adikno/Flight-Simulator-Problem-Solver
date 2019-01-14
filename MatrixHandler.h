@@ -15,6 +15,11 @@ public:
     MatrixHandler(Solver *solver1, CacheManager *cacheManager);
 
     void handleClient(int clientSock) override;
+
+    ~MatrixHandler() {
+        delete this->cm;
+        delete this->solver;
+    }
 };
 
 

@@ -18,7 +18,7 @@ public:
 
     virtual void saveSolution(string problem,string solution) = 0;
 
-
+    virtual ~CacheManager() = default;
 
 };
 #endif //UNTITLED14_CHACEMANAGER_H

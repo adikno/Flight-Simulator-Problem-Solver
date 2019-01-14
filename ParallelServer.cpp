@@ -6,6 +6,18 @@
 
 using namespace server_side;
 
+void worker(TasksQueue* queue) {
+    while (!queue->stop()) {
+        queue->wait();
+
+        Task* task = queue->pop();
+        if (task) {
+            task->execute();
+            delete task;
+        }
+    }
+}
+
 void* openParallelSocket(void* arg) {
     struct myParams *params = (myParams*) arg;
     int sockfd, newsockfd, clilen;
@@ -31,11 +43,10 @@ void* openParallelSocket(void* arg) {
     // Now start listening for the clients, here process will
     //  go in sleep mode and will wait for the incoming connection
 
-    listen(sockfd, SOMAXCONN);
+    listen(sockfd, 1);
     clilen = sizeof(cli_addr);
 
     bool first = true;
-    bool run = true;
 
     while (run) {
 
@@ -54,32 +65,48 @@ void* openParallelSocket(void* arg) {
                     continue;
                 } else {
                     perror("other error");
-                    exit(3);
+                    run = false;
+                    continue;
                 }
             }
         } else {
             newsockfd = accept(sockfd, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
             if (newsockfd < 0) {
                 perror("error");
+                run = false;
+                continue;
             }
             first = false;
         }
         cout << "client on port: " << newsockfd << endl;
 
-        params->c->handleClient(newsockfd);
-
-        close(newsockfd);
+        params->tasks->push(new MatrixTask(params->c, newsockfd));
+    }
+    params->tasks->exit();
+    while (!params->workers->empty()) {
+        params->workers->front().join();
+        params->workers->pop();
     }
     close(sockfd);
     return nullptr;
 }
 
+ParallelServer::ParallelServer() {
+    this->params = new myParams();
+    this->params->tasks = &tasks_queue;
+    this->params->workers = &workers;
+    for (int i = 0; i < 1; ++i) {
+        workers.push(std::thread(worker, &tasks_queue));
+    }
+}
+
 void ParallelServer::open(int port, ClientHandler *c) {
-    /*this->params->port = port;
+    this->params->port = port;
     this->params->c = c;
     pthread_t trid;
-    pthread_create(&trid, nullptr, openParallelSocket, this->params);*/
+    pthread_create(&trid, nullptr, openParallelSocket, this->params);
 }
 
 void ParallelServer::stop() {
+    run = false;
 }

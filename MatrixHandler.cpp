@@ -46,6 +46,8 @@ void MatrixHandler::handleClient(int clientSock) {
         perror("ERROR writing to socket");
         exit(1);
     }
+
+    close(clientSock);
     //output.flush();
 
 }

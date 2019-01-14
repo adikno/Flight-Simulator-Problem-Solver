@@ -3,6 +3,7 @@
 //
 
 #include "SerialServer.h"
+#include "ParallelServer.h"
 #include <pthread.h>
 
 using namespace std;
@@ -37,7 +38,6 @@ void* openSocket(void* arg) {
     clilen = sizeof(cli_addr);
 
     bool first = true;
-    bool run = true;
 
     while (run) {
 
@@ -56,13 +56,16 @@ void* openSocket(void* arg) {
                     continue;
                 } else {
                     perror("other error");
-                    exit(3);
+                    run = false;
+                    continue;
                 }
             }
         } else {
             newsockfd = accept(sockfd, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
             if (newsockfd < 0) {
                 perror("error");
+                run = false;
+                continue;
             }
             first = false;
         }
@@ -85,4 +88,5 @@ void SerialServer::open(int port, ClientHandler *c) {
 }
 
 void SerialServer::stop() {
+    run = false;
 }

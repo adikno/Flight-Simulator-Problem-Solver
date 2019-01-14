@@ -17,7 +17,7 @@ public:
         this->searcher = searcher1;
     }
 
-    string getSolution(string problem) {
+    string getSolution(string problem) override {
         //ignore first line !!
         vector<vector<double> > vec = explode(problem, ',');
         vector<double> first = vec.at(0);

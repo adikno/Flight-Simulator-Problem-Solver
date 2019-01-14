@@ -7,12 +7,12 @@
 bool FileCacheManager:: isExist(string problem)  {
     string solution;
     try{
-        pthread_mutex_lock(&mutex);
+        pthread_mutex_lock(&mutexMap);
         solutions.at(problem);
-        pthread_mutex_unlock(&mutex);
+        pthread_mutex_unlock(&mutexMap);
         return true;
-    }catch (exception &e){
-        pthread_mutex_unlock(&mutex);
+    } catch (exception &e){
+        pthread_mutex_unlock(&mutexMap);
         return false;
     }
 }
@@ -20,12 +20,12 @@ bool FileCacheManager:: isExist(string problem)  {
 string FileCacheManager::getSulotion(string problem)  {
     string solution;
     try{
-        pthread_mutex_lock(&mutex);
+        pthread_mutex_lock(&mutexMap);
         solutions.at(problem) = solution;
-        pthread_mutex_unlock(&mutex);
+        pthread_mutex_unlock(&mutexMap);
         return solution;
     }catch (exception &e){
-        pthread_mutex_unlock(&mutex);
+        pthread_mutex_unlock(&mutexMap);
         return nullptr;
     }
 }

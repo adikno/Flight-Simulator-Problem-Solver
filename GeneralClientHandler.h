@@ -51,6 +51,11 @@ public:
         }
     }
 
+    ~GeneralClientHandler() override {
+        delete this->cm;
+        delete this->solver;
+    }
+
 };
 
 #endif //UNTITLED14_GENERALCLIENTHANDLER_H
