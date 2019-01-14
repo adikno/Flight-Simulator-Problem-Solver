@@ -95,7 +95,7 @@ ParallelServer::ParallelServer() {
     this->params = new myParams();
     this->params->tasks = &tasks_queue;
     this->params->workers = &workers;
-    for (int i = 0; i < 1; ++i) {
+    for (int i = 0; i < 5; ++i) {
         workers.push(std::thread(worker, &tasks_queue));
     }
 }
