@@ -68,5 +68,8 @@ public:
     ~State() {
         delete this->state;
     }
+    void initDis(){
+        this->distance =cost;
+    }
 };
 #endif //UNTITLED14_STATE_H

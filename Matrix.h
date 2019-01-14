@@ -24,6 +24,9 @@ public:
         for(int i = 0; i < row; ++i)
             matrix[i] = new State<Point>*[col];
     }
+    int getSize(){
+        return row;
+    }
 
     void setValues(vector<vector<double >> vec);
     State<Point>* getInitialState() override;
@@ -44,6 +47,9 @@ public:
         }
         delete matrix;
     }
+    vector<vector<string>> toString();
+
+    void initDis() override;
 };
 
 

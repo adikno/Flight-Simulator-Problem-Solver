@@ -177,6 +177,33 @@ GeneralClientHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.s
 .PHONY : GeneralClientHandler.cpp.s
 
+GraphFile.o: GraphFile.cpp.o
+
+.PHONY : GraphFile.o
+
+# target to build an object file
+GraphFile.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/GraphFile.cpp.o
+.PHONY : GraphFile.cpp.o
+
+GraphFile.i: GraphFile.cpp.i
+
+.PHONY : GraphFile.i
+
+# target to preprocess a source file
+GraphFile.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/GraphFile.cpp.i
+.PHONY : GraphFile.cpp.i
+
+GraphFile.s: GraphFile.cpp.s
+
+.PHONY : GraphFile.s
+
+# target to generate assembly for a file
+GraphFile.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/GraphFile.cpp.s
+.PHONY : GraphFile.cpp.s
+
 Main.o: Main.cpp.o
 
 .PHONY : Main.o
@@ -230,6 +257,33 @@ Matrix.s: Matrix.cpp.s
 Matrix.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/Matrix.cpp.s
 .PHONY : Matrix.cpp.s
+
+MatrixGenerator.o: MatrixGenerator.cpp.o
+
+.PHONY : MatrixGenerator.o
+
+# target to build an object file
+MatrixGenerator.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/MatrixGenerator.cpp.o
+.PHONY : MatrixGenerator.cpp.o
+
+MatrixGenerator.i: MatrixGenerator.cpp.i
+
+.PHONY : MatrixGenerator.i
+
+# target to preprocess a source file
+MatrixGenerator.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/MatrixGenerator.cpp.i
+.PHONY : MatrixGenerator.cpp.i
+
+MatrixGenerator.s: MatrixGenerator.cpp.s
+
+.PHONY : MatrixGenerator.s
+
+# target to generate assembly for a file
+MatrixGenerator.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/MatrixGenerator.cpp.s
+.PHONY : MatrixGenerator.cpp.s
 
 MatrixHandler.o: MatrixHandler.cpp.o
 
@@ -366,6 +420,33 @@ SerialServer.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/SerialServer.cpp.s
 .PHONY : SerialServer.cpp.s
 
+SolutionFile.o: SolutionFile.cpp.o
+
+.PHONY : SolutionFile.o
+
+# target to build an object file
+SolutionFile.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/SolutionFile.cpp.o
+.PHONY : SolutionFile.cpp.o
+
+SolutionFile.i: SolutionFile.cpp.i
+
+.PHONY : SolutionFile.i
+
+# target to preprocess a source file
+SolutionFile.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/SolutionFile.cpp.i
+.PHONY : SolutionFile.cpp.i
+
+SolutionFile.s: SolutionFile.cpp.s
+
+.PHONY : SolutionFile.s
+
+# target to generate assembly for a file
+SolutionFile.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled14.dir/build.make CMakeFiles/untitled14.dir/SolutionFile.cpp.s
+.PHONY : SolutionFile.cpp.s
+
 StringReverser.o: StringReverser.cpp.o
 
 .PHONY : StringReverser.o
@@ -408,12 +489,18 @@ help:
 	@echo "... GeneralClientHandler.o"
 	@echo "... GeneralClientHandler.i"
 	@echo "... GeneralClientHandler.s"
+	@echo "... GraphFile.o"
+	@echo "... GraphFile.i"
+	@echo "... GraphFile.s"
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
 	@echo "... Matrix.o"
 	@echo "... Matrix.i"
 	@echo "... Matrix.s"
+	@echo "... MatrixGenerator.o"
+	@echo "... MatrixGenerator.i"
+	@echo "... MatrixGenerator.s"
 	@echo "... MatrixHandler.o"
 	@echo "... MatrixHandler.i"
 	@echo "... MatrixHandler.s"
@@ -429,6 +516,9 @@ help:
 	@echo "... SerialServer.o"
 	@echo "... SerialServer.i"
 	@echo "... SerialServer.s"
+	@echo "... SolutionFile.o"
+	@echo "... SolutionFile.i"
+	@echo "... SolutionFile.s"
 	@echo "... StringReverser.o"
 	@echo "... StringReverser.i"
 	@echo "... StringReverser.s"

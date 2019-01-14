@@ -187,6 +187,45 @@ CMakeFiles/untitled14.dir/StringReverser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/StringReverser.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/michal/CLionProjects/untitled14/StringReverser.cpp -o CMakeFiles/untitled14.dir/StringReverser.cpp.s
 
+CMakeFiles/untitled14.dir/MatrixGenerator.cpp.o: CMakeFiles/untitled14.dir/flags.make
+CMakeFiles/untitled14.dir/MatrixGenerator.cpp.o: ../MatrixGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/untitled14.dir/MatrixGenerator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/MatrixGenerator.cpp.o -c /home/michal/CLionProjects/untitled14/MatrixGenerator.cpp
+
+CMakeFiles/untitled14.dir/MatrixGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled14.dir/MatrixGenerator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/michal/CLionProjects/untitled14/MatrixGenerator.cpp > CMakeFiles/untitled14.dir/MatrixGenerator.cpp.i
+
+CMakeFiles/untitled14.dir/MatrixGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/MatrixGenerator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/michal/CLionProjects/untitled14/MatrixGenerator.cpp -o CMakeFiles/untitled14.dir/MatrixGenerator.cpp.s
+
+CMakeFiles/untitled14.dir/GraphFile.cpp.o: CMakeFiles/untitled14.dir/flags.make
+CMakeFiles/untitled14.dir/GraphFile.cpp.o: ../GraphFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/untitled14.dir/GraphFile.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/GraphFile.cpp.o -c /home/michal/CLionProjects/untitled14/GraphFile.cpp
+
+CMakeFiles/untitled14.dir/GraphFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled14.dir/GraphFile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/michal/CLionProjects/untitled14/GraphFile.cpp > CMakeFiles/untitled14.dir/GraphFile.cpp.i
+
+CMakeFiles/untitled14.dir/GraphFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/GraphFile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/michal/CLionProjects/untitled14/GraphFile.cpp -o CMakeFiles/untitled14.dir/GraphFile.cpp.s
+
+CMakeFiles/untitled14.dir/SolutionFile.cpp.o: CMakeFiles/untitled14.dir/flags.make
+CMakeFiles/untitled14.dir/SolutionFile.cpp.o: ../SolutionFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/untitled14.dir/SolutionFile.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled14.dir/SolutionFile.cpp.o -c /home/michal/CLionProjects/untitled14/SolutionFile.cpp
+
+CMakeFiles/untitled14.dir/SolutionFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled14.dir/SolutionFile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/michal/CLionProjects/untitled14/SolutionFile.cpp > CMakeFiles/untitled14.dir/SolutionFile.cpp.i
+
+CMakeFiles/untitled14.dir/SolutionFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled14.dir/SolutionFile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/michal/CLionProjects/untitled14/SolutionFile.cpp -o CMakeFiles/untitled14.dir/SolutionFile.cpp.s
+
 # Object files for target untitled14
 untitled14_OBJECTS = \
 "CMakeFiles/untitled14.dir/FileCacheManger.cpp.o" \
@@ -198,7 +237,10 @@ untitled14_OBJECTS = \
 "CMakeFiles/untitled14.dir/ParallelServer.cpp.o" \
 "CMakeFiles/untitled14.dir/Point.cpp.o" \
 "CMakeFiles/untitled14.dir/SerialServer.cpp.o" \
-"CMakeFiles/untitled14.dir/StringReverser.cpp.o"
+"CMakeFiles/untitled14.dir/StringReverser.cpp.o" \
+"CMakeFiles/untitled14.dir/MatrixGenerator.cpp.o" \
+"CMakeFiles/untitled14.dir/GraphFile.cpp.o" \
+"CMakeFiles/untitled14.dir/SolutionFile.cpp.o"
 
 # External object files for target untitled14
 untitled14_EXTERNAL_OBJECTS =
@@ -213,9 +255,12 @@ untitled14: CMakeFiles/untitled14.dir/ParallelServer.cpp.o
 untitled14: CMakeFiles/untitled14.dir/Point.cpp.o
 untitled14: CMakeFiles/untitled14.dir/SerialServer.cpp.o
 untitled14: CMakeFiles/untitled14.dir/StringReverser.cpp.o
+untitled14: CMakeFiles/untitled14.dir/MatrixGenerator.cpp.o
+untitled14: CMakeFiles/untitled14.dir/GraphFile.cpp.o
+untitled14: CMakeFiles/untitled14.dir/SolutionFile.cpp.o
 untitled14: CMakeFiles/untitled14.dir/build.make
 untitled14: CMakeFiles/untitled14.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable untitled14"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/michal/CLionProjects/untitled14/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable untitled14"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled14.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

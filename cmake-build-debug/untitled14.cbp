@@ -116,6 +116,12 @@
 		<Unit filename="/home/michal/CLionProjects/untitled14/GeneralClientHandler.h">
 			<Option target="untitled14"/>
 		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/GraphFile.cpp">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/GraphFile.h">
+			<Option target="untitled14"/>
+		</Unit>
 		<Unit filename="/home/michal/CLionProjects/untitled14/Main.cpp">
 			<Option target="untitled14"/>
 		</Unit>
@@ -126,6 +132,12 @@
 			<Option target="untitled14"/>
 		</Unit>
 		<Unit filename="/home/michal/CLionProjects/untitled14/Matrix.h">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/MatrixGenerator.cpp">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/MatrixGenerator.h">
 			<Option target="untitled14"/>
 		</Unit>
 		<Unit filename="/home/michal/CLionProjects/untitled14/MatrixHandler.cpp">
@@ -165,6 +177,12 @@
 			<Option target="untitled14"/>
 		</Unit>
 		<Unit filename="/home/michal/CLionProjects/untitled14/Server.h">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/SolutionFile.cpp">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/SolutionFile.h">
 			<Option target="untitled14"/>
 		</Unit>
 		<Unit filename="/home/michal/CLionProjects/untitled14/Solver.h">

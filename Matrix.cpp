@@ -94,3 +94,28 @@ double Matrix::calculateHValue(State<Point>* cur)
 
 }
 
+void Matrix::initDis() {
+    for (int i = 0; i <row ; ++i) {
+        for (int j = 0; j < col ; ++j) {
+            matrix[i][j]->initDis();
+        }
+
+    }
+
+
+}
+
+vector<vector<string>> Matrix::toString() {
+    vector<vector<string>> all;
+    vector<string> eachRow;
+    for (int i = 0; i <row ; ++i) {
+        for (int j = 0; j < col ; ++j) {
+            string x = to_string(matrix[i][j]->getCost());
+            eachRow.emplace_back(x);
+        }
+        all.emplace_back(eachRow);
+        eachRow.clear();
+    }
+    return all;
+
+}
