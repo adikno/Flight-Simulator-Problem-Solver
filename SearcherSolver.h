@@ -21,7 +21,7 @@ public:
         //ignore first line !!
         vector<vector<double> > vec = explode(problem, ',');
         vector<double> first = vec.at(0);
-        auto *matrix = new Matrix(first.size(), first.size());
+        auto *matrix = new Matrix(first.size(), vec.size() - 2);
         vector<double> temp = vec.at(vec.size() - 1);
         int goalX = temp.at(0);
         int goalY = temp.at(1);
