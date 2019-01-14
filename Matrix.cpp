@@ -5,11 +5,11 @@
 #include "Matrix.h"
 
 State<Point>* Matrix::getInitialState() {
-    return matrix[0][0];
+    return this->initialState;
 }
 
 State<Point>* Matrix::getGoalState() {
-    return matrix[row - 1][col - 1];
+    return this->goalState;
 }
 
 void Matrix::setValues(vector<vector<double> > vec) {

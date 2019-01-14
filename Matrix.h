@@ -16,6 +16,8 @@ class Matrix : public Searchable<Point>{
     int row;
     int col;
     State<Point>* **matrix;
+    State<Point>* initialState;
+    State<Point>* goalState;
 public:
     Matrix(int n, int m) {
         this->row = n;
@@ -35,8 +37,8 @@ public:
 
     list<State<Point>*> getAllPossibleStates(State<Point>* s, char type) override;
 
-    void setCurr(State<Point>* curr);
-    double calculateHValue(State<Point>* cur);
+    void setCurr(State<Point>* curr) override;
+    double calculateHValue(State<Point>* cur) override;
 
     ~Matrix() {
         for (int j = 0; j < row; j++) {
@@ -50,6 +52,14 @@ public:
     vector<vector<string>> toString();
 
     void initDis() override;
+
+    void setInitial(int i, int j) {
+        this->initialState = matrix[i][j];
+    }
+
+    void setGoal(int i, int j) {
+        this->goalState = matrix[i][j];
+    }
 };
 
 

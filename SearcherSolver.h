@@ -22,9 +22,17 @@ public:
         vector<vector<double> > vec = explode(problem, ',');
         vector<double> first = vec.at(0);
         auto *matrix = new Matrix(first.size(), first.size());
+        vector<double> temp = vec.at(vec.size() - 1);
+        int goalX = temp.at(0);
+        int goalY = temp.at(1);
         vec.erase(vec.end());
+        temp = vec.at(vec.size() - 1);
+        int initX = temp.at(0);
+        int initY = temp.at(1);
         vec.erase(vec.end());
         matrix->setValues(vec);
+        matrix->setGoal(goalX, goalY);
+        matrix->setInitial(initX, initY);
         Searchable<Point> *searchable = matrix;
         vector<State<Point> *> solution = searcher->search(searchable);
         string final = "";

@@ -15,52 +15,23 @@
 #include "MatrixHandler.h"
 #include "BestFirstSearch.h"
 #include "ParallelServer.h"
-#include "MatrixGenerator.h"
-#include "GraphFile.h"
-#include "SolutionFile.h"
 
-pthread_mutex_t mutex;
+pthread_mutex_t mutexMap;
 pthread_mutex_t mutexFile;
 int main(int argc, char *argv[]) {
-
-
-    Searcher<Point> *searcher = new BestFirstSearch<Point>();
-    Searcher<Point> *searcher1 = new DFS<Point>();
-    Searcher<Point> *searcher2 = new BFS<Point>();
-    Searcher<Point> *searcher3 = new AStar<Point>();
-    for (int i = 0; i< 1; i++){
-        GraphFile *graphFile = new GraphFile();
-        SolutionFile *solutionFile = new SolutionFile();
-        MatrixGenerator *matrixGenarator = new MatrixGenerator;
-        matrixGenarator->create();
-        Matrix *matrix  = matrixGenarator->getMatrix();
-        Searchable<Point> *searchable = matrix;
-        graphFile->write(matrix);
-        searcher->search(searchable);
-        solutionFile->write(searcher->getPathCost(),searcher->getNumberOfNodesEvaluated());
-        matrix->initDis();
-        searcher1->search(searchable);
-        solutionFile->write(searcher1->getPathCost(),searcher1->getNumberOfNodesEvaluated());
-        matrix->initDis();
-        searcher2->search(searchable);
-        solutionFile->write(searcher2->getPathCost(),searcher2->getNumberOfNodesEvaluated());
-        matrix->initDis();
-        searcher3->search(searchable);
-        solutionFile->write(searcher3->getPathCost(),searcher3->getNumberOfNodesEvaluated());
-
-    }
-    pthread_mutex_init(&mutex, nullptr);
+    pthread_mutex_init(&mutexMap, nullptr);
     pthread_mutex_init(&mutexFile, nullptr);
+    Searcher<Point> *searcher = new AStar<Point>();
+    Searcher<Point> *searcher2 = new BFS<Point>();
+    Searcher<Point> *searcher3 = new DFS<Point>();
 
     auto *solver = new SearcherSolver(searcher);
     CacheManager *cacheManager = new FileCacheManager();
     ClientHandler *clientHandler = new MatrixHandler(solver, cacheManager);
-    /*
     server_side::Server *server = new server_side::ParallelServer();
     server->open(atoi(argv[1]), clientHandler);
-    //while(true);
-
-    auto *solver2 = new SearcherSolver(searcher2);
+    while(true);
+    /*auto *solver2 = new SearcherSolver(searcher2);
     auto *solver3 = new SearcherSolver(searcher3);
     string path1 = solver->getSolution("4, 2, 9, 5, 7, 0, 7, 6, 3, 7, 8\n"
                                        " 4, 0,10, 8, 1, 0, 5, 5, 7, 8, 4\n"
@@ -111,6 +82,5 @@ int main(int argc, char *argv[]) {
     cout << path3 << endl;
     cout << searcher3->getPathCost() << endl;
     cout << searcher3->getNumberOfNodesEvaluated() << endl;
-      */
-
+*/
 }
