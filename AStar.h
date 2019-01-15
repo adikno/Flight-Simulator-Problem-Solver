@@ -40,8 +40,8 @@ public:
         }
         return false;
     }
-    priority_queue<State<T>,vector<State<T>>,Cmp> updateQueue(priority_queue<State<T>, vector<State<T>>, Cmp> &queueOpen) {
-        priority_queue<State<T>,vector<State<T>>,Cmp> temp;
+    priority_queue<State<T>*,vector<State<T>*>,Cmp> updateQueue(priority_queue<State<T>*, vector<State<T>*>, Cmp> &queueOpen) {
+        priority_queue<State<T>*,vector<State<T>*>,Cmp> temp;
         while (!queueOpen.empty()) {
             State<T>* node = queueOpen.top();
             temp.push(node);

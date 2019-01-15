@@ -18,7 +18,6 @@ add_executable(untitled14
         GraphFile.cpp
         GraphFile.h
         Main.cpp
-        Main.h
         Matrix.cpp
         Matrix.h
         MatrixGenerator.cpp

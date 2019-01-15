@@ -45,8 +45,6 @@ ParallelServer.h
 /home/adi/CLionProjects/milestone2/Main.cpp
 signal.h
 -
-Main.h
-/home/adi/CLionProjects/milestone2/Main.h
 Server.h
 /home/adi/CLionProjects/milestone2/Server.h
 FileCacheManger.h
@@ -60,8 +58,6 @@ MatrixHandler.h
 ParallelServer.h
 /home/adi/CLionProjects/milestone2/ParallelServer.h
 
-/home/adi/CLionProjects/milestone2/Main.h
-
 /home/adi/CLionProjects/milestone2/Matrix.h
 string
 -
@@ -71,16 +67,6 @@ Searchable.h
 /home/adi/CLionProjects/milestone2/Searchable.h
 Point.cpp
 /home/adi/CLionProjects/milestone2/Point.cpp
-
-/home/adi/CLionProjects/milestone2/MatrixHandler.cpp
-memory.h
--
-unistd.h
--
-sys/socket.h
--
-MatrixHandler.h
-/home/adi/CLionProjects/milestone2/MatrixHandler.h
 
 /home/adi/CLionProjects/milestone2/MatrixHandler.h
 ClientHandler.h
@@ -159,22 +145,6 @@ Matrix.h
 /home/adi/CLionProjects/milestone2/Matrix.h
 Searchable.h
 /home/adi/CLionProjects/milestone2/Searchable.h
-
-/home/adi/CLionProjects/milestone2/SerialServer.cpp
-SerialServer.h
-/home/adi/CLionProjects/milestone2/SerialServer.h
-ParallelServer.h
-/home/adi/CLionProjects/milestone2/ParallelServer.h
-pthread.h
--
-
-/home/adi/CLionProjects/milestone2/SerialServer.h
-signal.h
--
-Server.h
-/home/adi/CLionProjects/milestone2/Server.h
-thread
--
 
 /home/adi/CLionProjects/milestone2/Server.h
 signal.h
