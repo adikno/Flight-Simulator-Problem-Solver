@@ -126,6 +126,10 @@ public:
         }
         return big;
     }
+
+    ~SearcherSolver() override {
+        delete searcher;
+    }
 };
 
 

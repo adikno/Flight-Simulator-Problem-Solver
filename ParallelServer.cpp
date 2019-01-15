@@ -3,6 +3,7 @@
 //
 
 #include "ParallelServer.h"
+#include "MatrixHandler.h"
 
 using namespace server_side;
 
@@ -50,7 +51,7 @@ void* openParallelSocket(void* arg) {
 
     while (run) {
 
-        if (!first) {
+        /*if (!first) {
             timeval timeout;
             timeout.tv_sec = 10;
             timeout.tv_usec = 0;
@@ -69,7 +70,7 @@ void* openParallelSocket(void* arg) {
                     continue;
                 }
             }
-        } else {
+        } else {*/
             newsockfd = accept(sockfd, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
             if (newsockfd < 0) {
                 perror("error");
@@ -77,9 +78,8 @@ void* openParallelSocket(void* arg) {
                 continue;
             }
             first = false;
-        }
+        //}
         cout << "client on port: " << newsockfd << endl;
-
         params->tasks->push(new MatrixTask(params->c, newsockfd));
     }
     params->tasks->exit();

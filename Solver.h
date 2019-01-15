@@ -13,5 +13,6 @@ class Solver {
 
 public:
     virtual string getSolution(string problem) = 0;
+    virtual ~Solver() = default;
 };
 #endif //UNTITLED14_SOLVER_H

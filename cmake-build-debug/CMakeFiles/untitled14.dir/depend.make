@@ -10,6 +10,7 @@ CMakeFiles/untitled14.dir/FileCacheManger.cpp.o: ../MyParams.h
 CMakeFiles/untitled14.dir/FileCacheManger.cpp.o: ../OpenSocket.cpp
 CMakeFiles/untitled14.dir/FileCacheManger.cpp.o: ../ParallelServer.h
 CMakeFiles/untitled14.dir/FileCacheManger.cpp.o: ../Server.h
+CMakeFiles/untitled14.dir/FileCacheManger.cpp.o: ../Solver.h
 CMakeFiles/untitled14.dir/FileCacheManger.cpp.o: ../Task.h
 CMakeFiles/untitled14.dir/FileCacheManger.cpp.o: ../TasksQueue.h
 
@@ -78,15 +79,18 @@ CMakeFiles/untitled14.dir/MatrixHandler.cpp.o: ../Solver.h
 CMakeFiles/untitled14.dir/OpenSocket.cpp.o: ../CacheManager.h
 CMakeFiles/untitled14.dir/OpenSocket.cpp.o: ../ClientHandler.h
 CMakeFiles/untitled14.dir/OpenSocket.cpp.o: ../OpenSocket.cpp
+CMakeFiles/untitled14.dir/OpenSocket.cpp.o: ../Solver.h
 
 CMakeFiles/untitled14.dir/ParallelServer.cpp.o: ../CacheManager.h
 CMakeFiles/untitled14.dir/ParallelServer.cpp.o: ../ClientHandler.h
+CMakeFiles/untitled14.dir/ParallelServer.cpp.o: ../MatrixHandler.h
 CMakeFiles/untitled14.dir/ParallelServer.cpp.o: ../MatrixTask.h
 CMakeFiles/untitled14.dir/ParallelServer.cpp.o: ../MyParams.h
 CMakeFiles/untitled14.dir/ParallelServer.cpp.o: ../OpenSocket.cpp
 CMakeFiles/untitled14.dir/ParallelServer.cpp.o: ../ParallelServer.cpp
 CMakeFiles/untitled14.dir/ParallelServer.cpp.o: ../ParallelServer.h
 CMakeFiles/untitled14.dir/ParallelServer.cpp.o: ../Server.h
+CMakeFiles/untitled14.dir/ParallelServer.cpp.o: ../Solver.h
 CMakeFiles/untitled14.dir/ParallelServer.cpp.o: ../Task.h
 CMakeFiles/untitled14.dir/ParallelServer.cpp.o: ../TasksQueue.h
 
@@ -101,6 +105,7 @@ CMakeFiles/untitled14.dir/SerialServer.cpp.o: ../ParallelServer.h
 CMakeFiles/untitled14.dir/SerialServer.cpp.o: ../SerialServer.cpp
 CMakeFiles/untitled14.dir/SerialServer.cpp.o: ../SerialServer.h
 CMakeFiles/untitled14.dir/SerialServer.cpp.o: ../Server.h
+CMakeFiles/untitled14.dir/SerialServer.cpp.o: ../Solver.h
 CMakeFiles/untitled14.dir/SerialServer.cpp.o: ../Task.h
 CMakeFiles/untitled14.dir/SerialServer.cpp.o: ../TasksQueue.h
 

@@ -16,10 +16,20 @@ public:
 
     void handleClient(int clientSock) override;
 
-    ~MatrixHandler() {
+    ~MatrixHandler() override {
         delete this->cm;
         delete this->solver;
     }
+
+    CacheManager* getCacheManager() override {
+        return this->cm;
+    }
+
+    Solver* getSolver() override {
+        return this->solver;
+    }
+
+
 };
 
 
