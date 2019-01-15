@@ -27,14 +27,19 @@ bool FileCacheManager:: isExist(string problem)  {
 
 string FileCacheManager::getSulotion(string problem)  {
     string solution;
+    std::map<string,string>::iterator it;
     try{
         pthread_mutex_lock(&mutexMap);
-        solutions.at(problem) = solution;
+        it = solutions.find(problem);
+        if ( it == solutions.end() ) {
+            pthread_mutex_unlock(&mutexMap);
+        } else {
+            pthread_mutex_unlock(&mutexMap);
+            return it.operator*().second;
+        }
+
+    } catch (exception &e){
         pthread_mutex_unlock(&mutexMap);
-        return solution;
-    }catch (exception &e){
-        pthread_mutex_unlock(&mutexMap);
-        return nullptr;
     }
 }
 

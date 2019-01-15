@@ -40,8 +40,8 @@ public:
         }
         return false;
     }
-    priority_queue<State<T>*,vector<State<T>*>,Cmp> updateQueue(priority_queue<State<T>*, vector<State<T>*>, Cmp> &queueOpen) {
-        priority_queue<State<T>*,vector<State<T>*>,Cmp> temp;
+    priority_queue<State<T>,vector<State<T>>,Cmp> updateQueue(priority_queue<State<T>, vector<State<T>>, Cmp> &queueOpen) {
+        priority_queue<State<T>,vector<State<T>>,Cmp> temp;
         while (!queueOpen.empty()) {
             State<T>* node = queueOpen.top();
             temp.push(node);
@@ -53,14 +53,9 @@ public:
     vector<State<T> *> search(Searchable<T> *searchable) override {
 
         priority_queue<State<T> *, vector<State<T> *>, Cmp> openList;
-        //priority_queue<State<T> * ,vector<State<T> *> , Cmp> open;
         openList.push(searchable->getInitialState());
         unordered_set<State<T> *> closed;
         vector<State<T> *> path;
-
-        openList.push(searchable->getInitialState());
-        //evaluated++;
-
         // We set this boolean value as false as initially
         // the destination is not reached.
         bool foundDest = false;
@@ -100,26 +95,17 @@ public:
                     adj->setDistance(n->getDistance() + adj->getCost());
 
                     int i = 1;
-
-
-                    //openList = updateQueue(openList);
-
                 } else if (adj->getDistance() > n->getDistance() + adj->getCost()) {
                     bool inOpen = isExist(openList, adj);
-                    //if (!inOpen) {
-                    //openList.push(adj);
-                    //evaluated++;
-                    //} else {
                     adj->setDistance(n->getDistance() + adj->getCost());
                     adj->setParent(n);
                     adj->setHeur(searchable->calculateHValue(adj));
                     openList = updateQueue(openList);
-                    //}
                 }
             }
         }
     }
-    // return vector<State<T> *>();
+
 
 
     int getNumberOfNodesEvaluated()

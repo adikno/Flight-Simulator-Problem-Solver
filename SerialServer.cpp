@@ -69,7 +69,6 @@ void* openSocket(void* arg) {
             }
             first = false;
         }
-        cout << "client on port: " << newsockfd << endl;
 
         params->c->handleClient(newsockfd);
 

@@ -4,6 +4,8 @@
 
 #include "ParallelServer.h"
 #include "MatrixHandler.h"
+#include "SearcherSolver.h"
+#include "AStar.h"
 
 using namespace server_side;
 
@@ -51,7 +53,7 @@ void* openParallelSocket(void* arg) {
 
     while (run) {
 
-        /*if (!first) {
+        if (!first) {
             timeval timeout;
             timeout.tv_sec = 10;
             timeout.tv_usec = 0;
@@ -65,28 +67,27 @@ void* openParallelSocket(void* arg) {
                     run = false;
                     continue;
                 } else {
-                    perror("other error");
+                    //perror("other error");
                     run = false;
                     continue;
                 }
             }
-        } else {*/
+        } else {
             newsockfd = accept(sockfd, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
             if (newsockfd < 0) {
-                perror("error");
+                //perror("error");
                 run = false;
                 continue;
             }
             first = false;
-        //}
-        cout << "client on port: " << newsockfd << endl;
-        params->tasks->push(new MatrixTask(params->c, newsockfd));
+        }
+        Searcher<Point> *searcher = new AStar<Point>();
+        Solver* solver = new SearcherSolver(searcher);
+        CacheManager* cacheManager = params->c->getCacheManager();
+        ClientHandler* newHandler = new MatrixHandler(solver, cacheManager);
+        params->tasks->push(new MatrixTask(newHandler, newsockfd));
     }
     params->tasks->exit();
-    while (!params->workers->empty()) {
-        params->workers->front().join();
-        params->workers->pop();
-    }
     close(sockfd);
     return nullptr;
 }
@@ -95,7 +96,7 @@ ParallelServer::ParallelServer() {
     this->params = new myParams();
     this->params->tasks = &tasks_queue;
     this->params->workers = &workers;
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < 10; ++i) {
         workers.push(std::thread(worker, &tasks_queue));
     }
 }
@@ -105,6 +106,12 @@ void ParallelServer::open(int port, ClientHandler *c) {
     this->params->c = c;
     pthread_t trid;
     pthread_create(&trid, nullptr, openParallelSocket, this->params);
+    while (!workers.empty()) {
+        workers.front().join();
+        workers.pop();
+    }
+    delete params->c->getCacheManager();
+    pthread_exit(nullptr);
 }
 
 void ParallelServer::stop() {

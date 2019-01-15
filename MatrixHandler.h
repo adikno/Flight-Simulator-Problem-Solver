@@ -17,8 +17,8 @@ public:
     void handleClient(int clientSock) override;
 
     ~MatrixHandler() override {
-        delete this->cm;
-        delete this->solver;
+        //delete this->cm;
+        //delete this->solver;
     }
 
     CacheManager* getCacheManager() override {

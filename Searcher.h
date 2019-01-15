@@ -17,5 +17,7 @@ public:
     virtual int getNumberOfNodesEvaluated() = 0;
 
     virtual double getPathCost() = 0;
-        };
+
+    virtual ~Searcher() = default;
+};
 #endif //UNTITLED14_SEARCHER_H

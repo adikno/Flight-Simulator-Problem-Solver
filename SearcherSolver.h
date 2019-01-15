@@ -68,62 +68,48 @@ public:
         vector<vector<double >> big;
         string buff{""};
         vector<double> small;
-        for (auto n:s) {
-            if (n == ' ' || (n == c && buff.empty())) {
-                continue;
-            }
-            if (n == '\n') {
+        try {
+            for (auto n:s) {
+                if (n == ' ' || (n == c && buff.empty())) {
+                    continue;
+                }
+                if (n == '\n') {
+                    if (buff[0] == '-') {
+                        buff.erase(0, 1);
+                        double num;
+                        num = -1 * stod(buff);
+                        small.push_back(num);
+                        big.push_back(small);
+                        small.clear();
+                        buff = "";
+                    } else {
+                        double num;
+                        num = stod(buff);
+                        small.push_back(num);
+                        big.push_back(small);
+                        small.clear();
+                        buff = "";
+                        continue;
+                    }
+                }
+                if (n != c) {
+                    buff += n;
+                    continue;
+                }
                 if (buff[0] == '-') {
                     buff.erase(0, 1);
                     double num;
-                     try {
-                         num = -1 * stod(buff);
-                     } catch (exception &e) {
-                         cout << "a";
-                     }
+                    num = -1 * stod(buff);
                     small.push_back(num);
-                    big.push_back(small);
-                    small.clear();
-                    buff = "";
-                } else {
-                    double num;
-                    try {
-                        num = stod(buff);
-                    } catch (exception &e) {
-                        cout << "a";
-                    }
-                    small.push_back(num);
-                    big.push_back(small);
-                    small.clear();
                     buff = "";
                     continue;
                 }
-            }
-            if (n != c) {
-                buff += n;
-                continue;
-            }
-            if (buff[0] == '-') {
-                buff.erase(0, 1);
                 double num;
-                try {
-                    num = -1 * stod(buff);
-                } catch (exception &e) {
-                    cout << "a";
-                }
+                num = stod(buff);
                 small.push_back(num);
                 buff = "";
-                continue;
             }
-            double num;
-            try {
-                num = stod(buff);
-            } catch (exception &e) {
-                cout << "a";
-            }
-            small.push_back(num);
-            buff = "";
-        }
+        } catch(exception &e) {}
         return big;
     }
 

@@ -16,38 +16,43 @@ void MatrixHandler::handleClient(int clientSock) {
     long n;
     char problem[1024] = "";
     char temp[1024] = "";
-    char output[1024] = "";
-
+    char finalProb[1024] = "";
     bzero(temp, 1024);
     n = read(clientSock, temp, 1023);
     if (n < 0) {
         perror("ERROR reading from socket");
         exit(1);
     }
-    while (strcmp(temp, "end") != 0) {
-        strcat(problem, temp);
-        strcat(problem, "\n");
+    strcat(problem, temp);
+    //strcat(problem, "\n");
+    while (strstr(problem, "end") == nullptr) {
         bzero(temp, 1024);
         n = read(clientSock, temp, 1023);
         if (n < 0) {
             perror("ERROR reading from socket");
             exit(1);
         }
+        strcat(problem, temp);
+        //strcat(problem, "\n");
     }
-    if (cm->isExist(problem)) {
-        solution = cm->getSulotion(problem);
+    int i = 0;
+    bzero(finalProb, 1024);
+    while (problem[i] != 'e') {
+        finalProb[i] = problem[i];
+        i++;
+    }
+    if (cm->isExist(finalProb)) {
+        solution = cm->getSulotion(finalProb);
     } else {
-        solution = solver->getSolution(problem);
-        cm->saveSolution(problem, solution);
+        solution = solver->getSolution(finalProb);
+        cm->saveSolution(finalProb, solution);
     }
-
+    char output[solution.size()] = "";
     strcpy(output, solution.data());
-    if(write(clientSock, output, 1023) < 0){
+    if(write(clientSock, output, solution.size()) < 0){
         perror("ERROR writing to socket");
         exit(1);
     }
-
-    cout << solution << endl;
 
     close(clientSock);
     //output.flush();
