@@ -17,7 +17,7 @@ class SolutionFile {
 
 public:
     SolutionFile(){
-        solution.open("solution.txt");
+        solution.open("solution.txt",std::ios_base::app);
     }
 
     void write(double cost , int evaluated);

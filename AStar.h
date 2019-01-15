@@ -57,10 +57,9 @@ public:
         openList.push(searchable->getInitialState());
         unordered_set<State<T> *> closed;
         vector<State<T> *> path;
-        // Put the starting cell on the open list and set its
-        // 'f' as 0
+
         openList.push(searchable->getInitialState());
-        evaluated++;
+        //evaluated++;
 
         // We set this boolean value as false as initially
         // the destination is not reached.
@@ -77,7 +76,7 @@ public:
             closed.insert(n);
 
             if (n->equals(searchable->getGoalState())) {
-                evaluated++;
+                //evaluated++;
                 path.push_back(n);
                 while (!n->equals(searchable->getInitialState())) {
                     path.push_back(n->getParent());
@@ -98,8 +97,10 @@ public:
                     adj->setParent(n);
                     adj->setHeur(searchable->calculateHValue(adj));
                     openList.push(adj);
-
                     adj->setDistance(n->getDistance() + adj->getCost());
+
+                    int i = 1;
+
 
                     //openList = updateQueue(openList);
 

@@ -54,7 +54,7 @@ public:
         return this->cost;
     }
     void setDistance(double d) {
-        this->distance += d;
+        this->distance = d;
     }
 
     double getHeur() {

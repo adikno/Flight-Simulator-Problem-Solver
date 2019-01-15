@@ -146,6 +146,9 @@
 		<Unit filename="/home/michal/CLionProjects/untitled14/MatrixHandler.h">
 			<Option target="untitled14"/>
 		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/MatrixTask.h">
+			<Option target="untitled14"/>
+		</Unit>
 		<Unit filename="/home/michal/CLionProjects/untitled14/MyParams.h">
 			<Option target="untitled14"/>
 		</Unit>
@@ -195,6 +198,15 @@
 			<Option target="untitled14"/>
 		</Unit>
 		<Unit filename="/home/michal/CLionProjects/untitled14/StringReverser.h">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/Task.h">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/TasksQueue.cpp">
+			<Option target="untitled14"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/untitled14/TasksQueue.h">
 			<Option target="untitled14"/>
 		</Unit>
 		<Unit filename="/home/michal/CLionProjects/untitled14/CMakeLists.txt">

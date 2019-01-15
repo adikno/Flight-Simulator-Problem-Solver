@@ -16,7 +16,7 @@ class GraphFile {
 
 public:
     GraphFile(){
-        graph.open("graph.txt");
+        graph.open("graph.txt",std::ios_base::app);
         graph << counter;
         graph<<"\n";
     }

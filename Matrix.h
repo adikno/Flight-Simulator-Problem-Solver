@@ -25,6 +25,7 @@ public:
         this->matrix = new State<Point>**[row];
         for(int i = 0; i < row; ++i)
             matrix[i] = new State<Point>*[col];
+
     }
     int getSize(){
         return row;

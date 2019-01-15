@@ -89,7 +89,7 @@ public:
                 bool exist = isExist(openList, adj);
                 if (!exist && closed.count(adj) != 1) {
                     adj->setParent(n);
-                    adj->setDistance(n->getDistance());
+                    adj->setDistance(n->getDistance() +adj->getCost()) ;
                     openList.push(adj);
                 } else if (adj->getDistance() > n->getDistance() + adj->getCost()) {
                     bool inOpen = isExist(openList, adj);

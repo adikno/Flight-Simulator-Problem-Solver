@@ -13,8 +13,8 @@ class MatrixGenerator {
     int randSize;
 public:
     MatrixGenerator(){
-        srand (time(NULL));
-        int num =  rand() % 20 + 1;
+        int num =  rand() % 20 + 2;
+        cout<<num<<endl;
         this->randSize = num;
         this->matrix = new Matrix(num,num);
 

@@ -23,6 +23,8 @@ void Matrix::setValues(vector<vector<double> > vec) {
         j = 0;
         i++;
     }
+    //this->initialState = matrix[0][0];
+    //this->goalState = matrix[row-1][col-1];
     this->current = matrix[0][0];
 }
 
@@ -110,7 +112,7 @@ vector<vector<string>> Matrix::toString() {
     vector<string> eachRow;
     for (int i = 0; i <row ; ++i) {
         for (int j = 0; j < col ; ++j) {
-            string x = to_string(matrix[i][j]->getCost());
+            string x = to_string(int(matrix[i][j]->getCost()));
             eachRow.emplace_back(x);
         }
         all.emplace_back(eachRow);

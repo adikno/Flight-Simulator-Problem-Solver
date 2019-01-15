@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 project(untitled14)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 14 )
 set(CMAKE_CXX_FLAGS -pthread)
 
 include_directories(.)
@@ -17,12 +17,17 @@ add_executable(untitled14
         FileCacheManger.h
         GeneralClientHandler.cpp
         GeneralClientHandler.h
+        GraphFile.cpp
+        GraphFile.h
         Main.cpp
         Main.h
         Matrix.cpp
         Matrix.h
+        MatrixGenerator.cpp
+        MatrixGenerator.h
         MatrixHandler.cpp
         MatrixHandler.h
+        MatrixTask.h
         MyParams.h
         OpenSocket.cpp
         ParallelServer.cpp
@@ -34,7 +39,12 @@ add_executable(untitled14
         SerialServer.cpp
         SerialServer.h
         Server.h
+        SolutionFile.cpp
+        SolutionFile.h
         Solver.h
         "State .h"
         StringReverser.cpp
-        StringReverser.h Task.h MatrixTask.h TasksQueue.cpp TasksQueue.h)
+        StringReverser.h
+        Task.h
+        TasksQueue.cpp
+        TasksQueue.h)
