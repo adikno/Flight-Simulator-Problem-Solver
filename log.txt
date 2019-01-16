@@ -1,0 +1,195 @@
+commit 97549d9c1e4299794521ce875990406a20d3b321
+Author: adikno <adiknobel97@gmail.com>
+Date:   Tue Jan 15 16:53:27 2019 +0200
+
+    today
+
+commit acf0b4b64800d14dae73df43463c816d652e9231
+Author: adikno <adiknobel97@gmail.com>
+Date:   Tue Jan 15 16:40:34 2019 +0200
+
+    today
+
+commit 16c4fc2d3289cd321438b95b5d178a588894aac1
+Merge: 1d2573c 082cf8b
+Author: michalabr7 <michalabr7@gmail.com>
+Date:   Tue Jan 15 12:55:26 2019 +0200
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       Main.cpp
+    #       cmake-build-debug/CMakeFiles/Makefile2
+    #       cmake-build-debug/CMakeFiles/progress.marks
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/CXX.includecache
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/FileCacheManger.cpp.o
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/GeneralClientHandler.cpp.o
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/Main.cpp.o
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/Matrix.cpp.o
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/MatrixHandler.cpp.o
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/OpenSocket.cpp.o
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/ParallelServer.cpp.o
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/SerialServer.cpp.o
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/StringReverser.cpp.o
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/depend.internal
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/flags.make
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/link.txt
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/progress.make
+    #       cmake-build-debug/cache.txt
+    #       cmake-build-debug/untitled14
+    #       cmake-build-debug/untitled14.cbp
+
+commit 1d2573c85927bd4a9e8c9b0dd652ecde780fc098
+Author: michalabr7 <michalabr7@gmail.com>
+Date:   Tue Jan 15 12:51:50 2019 +0200
+
+    15.1
+
+commit 082cf8b206c73f4fdda87d1a60356b8eea85bed9
+Author: adikno <adiknobel97@gmail.com>
+Date:   Mon Jan 14 22:56:21 2019 +0200
+
+    today
+
+commit 051f58a7ef0b43b704f250dabca22645e024773a
+Author: adikno <adiknobel97@gmail.com>
+Date:   Mon Jan 14 20:55:17 2019 +0200
+
+    today
+
+commit 5d4ca989b766ea39fff1af3297b975b28cc33b00
+Author: adikno <adiknobel97@gmail.com>
+Date:   Mon Jan 14 20:51:28 2019 +0200
+
+    today
+
+commit 9f7680621168c153999d47dad9318234176bf671
+Author: adikno <adiknobel97@gmail.com>
+Date:   Mon Jan 14 20:49:30 2019 +0200
+
+    today
+
+commit 5b323c0a6cde03c51f25abddaa61032aa879706a
+Author: adikno <adiknobel97@gmail.com>
+Date:   Mon Jan 14 20:32:25 2019 +0200
+
+    Merge branch 'master' of /home/adi/CLionProjects/milestone2 with conflicts.
+
+commit 802de8068a0d78be52d27aaf290406b831d811b2
+Author: michalabr7 <michalabr7@gmail.com>
+Date:   Mon Jan 14 19:43:12 2019 +0200
+
+    addingFile
+
+commit 6f0a7e4fdfb508fc0c67c94edb5b00f34e92e179
+Author: michalabr7 <michalabr7@gmail.com>
+Date:   Mon Jan 14 15:46:08 2019 +0200
+
+    14.1
+
+commit b0cfdbb10b067160a9545d05403432058d7ca61d
+Merge: 3f9e683 b9d59cc
+Author: michalabr7 <michalabr7@gmail.com>
+Date:   Sun Jan 13 15:36:31 2019 +0200
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       BestFirstSearch.h
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/FileCacheManger.cpp.o
+
+commit b9d59cc2d668c3f175b7379b3e9f5f1ddb1609ce
+Author: adikno <adiknobel97@gmail.com>
+Date:   Sun Jan 13 15:35:29 2019 +0200
+
+    today
+
+commit 3f9e68343dac54450de226aa8bc4bc4a2c312a95
+Merge: ef90689 ae94aa9
+Author: michalabr7 <michalabr7@gmail.com>
+Date:   Sun Jan 13 11:50:32 2019 +0200
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       CMakeLists.txt
+
+commit ef906891b88da9081454bc2d05dab29220f7fff5
+Merge: 150de1a 9eaf9d4
+Author: michalabr7 <michalabr7@gmail.com>
+Date:   Sun Jan 13 11:43:57 2019 +0200
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       CMakeLists.txt
+    #       State .h
+    #       cmake-build-debug/CMakeFiles/Makefile2
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/CXX.includecache
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/DependInfo.cmake
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/Matrix.cpp.o
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/MySerialServer.cpp.o
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/MyTestClientHandler.cpp.o
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/build.make
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/cmake_clean.cmake
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/depend.internal
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/depend.make
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/link.txt
+    #       cmake-build-debug/CMakeFiles/untitled14.dir/main.cpp.o
+    #       cmake-build-debug/Makefile
+    #       cmake-build-debug/untitled14
+    #       cmake-build-debug/untitled14.cbp
+
+commit 150de1aadbbfb7e90009b063d38201ee5d12412b
+Author: michalabr7 <michalabr7@gmail.com>
+Date:   Sun Jan 13 11:39:52 2019 +0200
+
+    Astar
+
+commit ae94aa9110c958fc003507af7d4ba277d643de17
+Author: adikno <adiknobel97@gmail.com>
+Date:   Sun Jan 13 09:50:44 2019 +0200
+
+    today
+
+commit 9eaf9d471bb6fe0bcbaf9509e4133e9543813f63
+Author: adikno <adiknobel97@gmail.com>
+Date:   Sun Jan 13 09:40:21 2019 +0200
+
+    today
+
+commit edcb013290909e5b43192477c19522be56e243c5
+Author: adikno <adiknobel97@gmail.com>
+Date:   Thu Jan 10 20:18:04 2019 +0200
+
+    today
+
+commit 6b19d7137419335395aec54c8ac01e99e5d26c6c
+Author: adikno <adiknobel97@gmail.com>
+Date:   Thu Jan 10 19:52:43 2019 +0200
+
+    today
+
+commit 52fe3671ca55d18c6eb6d3047047e4ba9956b88c
+Author: michalabr7 <michalabr7@gmail.com>
+Date:   Thu Jan 10 11:59:13 2019 +0200
+
+    mm
+
+commit e7303497e831063e71677e79c882356a4471668c
+Author: adikno <adiknobel97@gmail.com>
+Date:   Wed Jan 9 00:38:18 2019 +0200
+
+    add
+
+commit 0d4aea1590c55efd23342c00a9ed09086bc66779
+Author: michalabr7 <michalabr7@gmail.com>
+Date:   Wed Jan 2 18:36:57 2019 +0200
+
+    little change
+
+commit 98ced5c6449f8d1a8950570d6a39922d46c083fc
+Author: michalabr7 <michalabr7@gmail.com>
+Date:   Wed Jan 2 18:28:02 2019 +0200
+
+    inital commit

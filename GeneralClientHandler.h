@@ -7,8 +7,13 @@
 
 #include "ClientHandler.h"
 #include "Solver.h"
+#include <stdio.h>
+#include <string.h>
+#include <iostream>
 
-
+#include <stdlib.h>
+#include <fstream>
+using namespace std;
 class GeneralClientHandler: public ClientHandler{
     Solver *solver;
 public:

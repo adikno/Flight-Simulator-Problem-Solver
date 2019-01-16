@@ -111,6 +111,7 @@ void ParallelServer::open(int port, ClientHandler *c) {
         workers.pop();
     }
     delete params->c->getCacheManager();
+   
     pthread_exit(nullptr);
 }
 

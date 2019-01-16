@@ -83,7 +83,6 @@ void Matrix::setCurr(State<Point>* curr) {
 }
 double Matrix::calculateHValue(State<Point>* cur)
 {
-    State<Point>* goal = this->getGoalState();
     int xCur = cur->getState()->getX();
     int yCur = cur->getState()->getY();
     int xGoal = this->getGoalState()->getState()->getX();

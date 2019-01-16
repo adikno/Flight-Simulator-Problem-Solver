@@ -56,10 +56,6 @@ public:
         openList.push(searchable->getInitialState());
         unordered_set<State<T> *> closed;
         vector<State<T> *> path;
-        // We set this boolean value as false as initially
-        // the destination is not reached.
-        bool foundDest = false;
-
         while (!openList.empty()) {
             State<T> *n = openList.top();
 
@@ -69,7 +65,6 @@ public:
             // Add this vertex to the closed list
             n->setVisited();
             closed.insert(n);
-
             if (n->equals(searchable->getGoalState())) {
                 //evaluated++;
                 path.push_back(n);
@@ -80,7 +75,7 @@ public:
                 }
                 pathCost += n->getCost();
                 vector<State<T> *> back;
-                for (int i = path.size() - 1; i >= 0; i--) {
+                for (unsigned long  i = path.size() - 1; i >= 0; i--) {
                     back.push_back(path.at(i));
                 }
                 return back;
@@ -93,10 +88,7 @@ public:
                     adj->setHeur(searchable->calculateHValue(adj));
                     openList.push(adj);
                     adj->setDistance(n->getDistance() + adj->getCost());
-
-                    int i = 1;
                 } else if (adj->getDistance() > n->getDistance() + adj->getCost()) {
-                    bool inOpen = isExist(openList, adj);
                     adj->setDistance(n->getDistance() + adj->getCost());
                     adj->setParent(n);
                     adj->setHeur(searchable->calculateHValue(adj));
@@ -104,6 +96,7 @@ public:
                 }
             }
         }
+
     }
 
 

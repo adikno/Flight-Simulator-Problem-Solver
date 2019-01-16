@@ -36,7 +36,7 @@ public:
         Searchable<Point> *searchable = matrix;
         vector<State<Point> *> solution = searcher->search(searchable);
         string final = "";
-        for (int i = 0; i < solution.size() - 1; i++) {
+        for (unsigned long i = 0; i < solution.size() - 1; i++) {
             int x1 = solution.at(i)->getState()->getX();
             int y1 = solution.at(i)->getState()->getY();
             int x2 = solution.at(i + 1)->getState()->getX();

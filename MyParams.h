@@ -7,6 +7,7 @@
 
 #include "ClientHandler.h"
 #include "TasksQueue.h"
+#include <thread>
 
 struct myParams {
         int port;

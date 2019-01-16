@@ -12,9 +12,9 @@ class MatrixGenerator {
     Matrix *matrix;
     int randSize;
 public:
-    MatrixGenerator(){
-        int num =  rand() % 20 + 2;
-        cout<<num<<endl;
+    MatrixGenerator(int num){
+        //int num =  rand() % 20 + 2;
+        //cout<<num<<endl;
         this->randSize = num;
         this->matrix = new Matrix(num,num);
 
