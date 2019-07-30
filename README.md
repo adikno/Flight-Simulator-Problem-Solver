@@ -1,4 +1,4 @@
-#Flight-Simulator-Problem-Solver
+# Flight-Simulator-Problem-Solver
 This program contains a server that solves various of search problems in a grid graph in parallel.
 
 The server asks the user for a matrix (when each cell contains a number representing the weight of the current vertex), a start point and a goal point.
